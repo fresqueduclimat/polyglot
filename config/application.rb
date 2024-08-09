@@ -35,5 +35,8 @@ module Polyglot
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    I18n.available_locales = %i[fr en]
+    config.i18n.default_locale = :en
   end
 end
