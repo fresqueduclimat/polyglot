@@ -3,6 +3,10 @@ en:
   access_details: Access informations
   activerecord:
     attributes:
+      user:
+        email: Email
+        firstname: Firstname
+        lastname: Lastname
     errors:
       messages:
         blank: can't be blank

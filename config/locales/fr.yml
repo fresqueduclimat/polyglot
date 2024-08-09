@@ -3,6 +3,10 @@ fr:
   access_details: Accéder aux informations
   activerecord:
     attributes:
+      user:
+        email: E-mail
+        firstname: Prénom
+        lastname: Nom
     errors:
       messages:
         blank: ne peut pas être vide
