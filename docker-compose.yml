@@ -19,3 +19,11 @@ services:
       - "3000:3000"
     environment:
       RUBY_YJIT_ENABLE: 1
+
+  test:
+    <<: *base
+    restart: on-failure
+    volumes:
+      - .:/app:cached
+    environment:
+      RAILS_ENV: test
