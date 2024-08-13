@@ -99,6 +99,10 @@ GEM
       irb (~> 1.10)
       reline (>= 0.3.8)
     diff-lcs (1.5.1)
+    dotenv (2.7.6)
+    dotenv-rails (2.7.6)
+      dotenv (= 2.7.6)
+      railties (>= 3.2)
     drb (2.2.1)
     error_highlight (0.6.0)
     erubi (1.13.0)
@@ -107,6 +111,11 @@ GEM
     factory_bot_rails (6.4.3)
       factory_bot (~> 6.4)
       railties (>= 5.0.0)
+    faraday (2.10.1)
+      faraday-net_http (>= 2.0, < 3.2)
+      logger
+    faraday-net_http (3.1.1)
+      net-http
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.5)
@@ -140,6 +149,8 @@ GEM
     mini_mime (1.1.5)
     minitest (5.24.1)
     msgpack (1.7.2)
+    net-http (0.4.1)
+      uri
     net-imap (0.4.14)
       date
       net-protocol
@@ -253,6 +264,7 @@ GEM
       railties (>= 6.0.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
+    uri (0.13.0)
     useragent (0.16.10)
     view_component (3.13.0)
       activesupport (>= 5.2.0, < 8.0)
@@ -282,8 +294,10 @@ DEPENDENCIES
   capybara
   cssbundling-rails
   debug
+  dotenv-rails (~> 2.7.6)
   error_highlight (>= 0.4.0)
   factory_bot_rails
+  faraday (~> 2.10)
   jbuilder
   jsbundling-rails
   lograge (~> 0.14.0)

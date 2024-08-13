@@ -4,6 +4,7 @@ ruby "3.3.0"
 gem "bcrypt", "~> 3.1.7"
 gem "bootsnap", require: false
 gem "cssbundling-rails"
+gem "faraday", "~> 2.10"
 gem "jbuilder"
 gem "jsbundling-rails"
 gem "lograge", "~> 0.14.0"
@@ -21,6 +22,7 @@ gem "view_component"
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
+  gem "dotenv-rails", "~> 2.7.6"
 end
 
 group :development do

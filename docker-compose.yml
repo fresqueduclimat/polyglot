@@ -20,10 +20,10 @@ services:
     environment:
       RUBY_YJIT_ENABLE: 1
 
-  test:
-    <<: *base
-    restart: on-failure
-    volumes:
-      - .:/app:cached
-    environment:
-      RAILS_ENV: test
+  # test:
+  #   <<: *base
+  #   restart: on-failure
+  #   volumes:
+  #     - .:/app:cached
+  #   environment:
+  #     RAILS_ENV: test
