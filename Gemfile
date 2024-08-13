@@ -9,7 +9,7 @@ gem "jsbundling-rails"
 gem "lograge", "~> 0.14.0"
 gem "propshaft"
 gem "puma", ">= 5.0"
-gem "rails", "~> 7.1.3", ">= 7.1.3.4"
+gem "rails", "~> 7.2"
 gem 'sqlite3', '~> 1.4'
 gem "stimulus-rails"
 gem "turbo-rails"
