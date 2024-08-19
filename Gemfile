@@ -8,6 +8,8 @@ gem "faraday", "~> 2.10"
 gem "jbuilder"
 gem "jsbundling-rails"
 gem "lograge", "~> 0.14.0"
+gem 'prawn', '~> 2.5'
+gem "prawn-templates"
 gem "propshaft"
 gem "puma", ">= 5.0"
 gem "rails", "~> 7.2"
