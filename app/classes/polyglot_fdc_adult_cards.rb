@@ -17,12 +17,9 @@ module PolyglotFdcAdultCards
     },
     {
       # V1C0L4: {x_pos: 0, y_pos: 5}, # Lot
-      V1C0L5: {x_pos: 2, y_pos: 95, size: 25},
-      V1C0L6: {x_pos: 2, y_pos: 83},
-      V1C0L7: {x_pos: 2, y_pos: 72},
-      V1C0L8: {x_pos: 2, y_pos: 60},
-      V1C0L9: {x_pos: 2, y_pos: 53},
-      V1C0L10: {x_pos: 77, y_pos: 30, width: 75, height: 45, overflow: :shrink_to_fit, rotate: 346},
+      P02B01: {x_pos: 2, y_pos: 97, size: 25},
+      P02B02: {x_pos: 2, y_pos: 80, width: 350, height: 260, min_font_size: 30, overflow: :shrink_to_fit},
+      V1C0L10: {x_pos: 77, y_pos: 32, width: 80, height: 45, overflow: :shrink_to_fit, rotate: 346},
       V1C0L11: {x_pos: 4, y_pos: 5, color: "FF0000"},
       V1C0L12: {x_pos: 21, y_pos: 7, width: 60, height: 20, overflow: :shrink_to_fit, color: "FF0000"},
       V1C0L13: {x_pos: 39, y_pos: 5, color: "FF0000"},

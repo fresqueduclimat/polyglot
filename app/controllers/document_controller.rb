@@ -3,7 +3,6 @@ class DocumentController < ApplicationController
     document_id = params[:document_id] || 7
     documents = Documents::Fetcher.new.call
     selected_document = Documents::Selecter.new(documents:, document_id:).call
-    config_name = selected_document.first[:config_name]
 
     api_key = selected_document.first[:api_key]
     parsed_languages = Tolgee::LanguagesFetcher.new(document_id:, api_key:).call
@@ -21,13 +20,14 @@ class DocumentController < ApplicationController
     return if document_id == 8.to_s
 
     # PDF GENERATION
+    config_name = selected_document.first[:config_name]
     config_array = config_name.constantize::CONFIG
     data = @result.to_h.transform_keys(&:to_sym)
-    page_size = [448, 306]
-    puts config_name.underscore
     template = Rails.root.join("resources", "document_templates", "#{config_name.underscore}.pdf")
-    Prawn::Document.generate(Rails.root.join("public", "pdf", "#{config_name.underscore}.pdf"), page_size:,
-                                                                                                skip_page_creation: true) do |pdf|
+    Prawn::Document.generate(Rails.root.join("public", "pdf", "#{config_name.underscore}.pdf"),
+                             page_size: selected_document.first[:page_size],
+                             skip_page_creation: true,
+                             margin: [0, 0, 0, 0]) do |pdf|
       Pdf::FontSelecter.new(pdf:, language:).call
       Pdf::Generator.new(pdf:, config_array:, data:, template:).call
     end
