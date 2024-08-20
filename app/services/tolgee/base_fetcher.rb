@@ -16,11 +16,9 @@ class Tolgee::BaseFetcher
   private
 
   def handle_response(response)
-    if response.success?
-      JSON.parse(response.body)
-    else
-      raise FetchError, "Failed to fetch data: #{response.body}"
-    end
+    raise FetchError, "Failed to fetch data: #{response.body}" unless response.success?
+
+    JSON.parse(response.body)
   end
 
   class FetchError < StandardError; end

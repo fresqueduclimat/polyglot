@@ -4,7 +4,7 @@ class Documents::Mapping
   end
 
   def call
-    @documents.map do |key, value|
+    @documents.map do |_key, value|
       [value[:name], value[:document_id]]
     end
   end

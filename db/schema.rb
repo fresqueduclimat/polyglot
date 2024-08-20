@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_08_09_121019) do
+ActiveRecord::Schema[7.1].define(version: 20_240_809_121_019) do
   create_table "users", force: :cascade do |t|
     t.string "uuid", null: false
     t.string "email", null: false
@@ -22,5 +22,4 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_09_121019) do
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["uuid"], name: "index_users_on_uuid", unique: true
   end
-
 end

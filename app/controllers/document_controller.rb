@@ -10,10 +10,10 @@ class DocumentController < ApplicationController
     @languages = parsed_languages["_embedded"]["languages"].map { |language| language["tag"] }
     # language = Languages::Selecter.new(languages: @languages, language_param: params[:laguage]).call
     language = if params[:language].present? && params[:language].in?(@languages)
-      params[:language]
-    else
-      @languages.first
-    end
+                 params[:language]
+               else
+                 @languages.first
+               end
 
     @documents = Documents::Mapping.new(documents:).call
     @result = Tolgee::ContentFetcher.new(document_id:, language:, api_key:).call
@@ -26,7 +26,8 @@ class DocumentController < ApplicationController
     page_size = [448, 306]
     puts config_name.underscore
     template = Rails.root.join("resources", "document_templates", "#{config_name.underscore}.pdf")
-    Prawn::Document.generate(Rails.root.join("public", "pdf", "#{config_name.underscore}.pdf"), page_size:, skip_page_creation: true) do |pdf|
+    Prawn::Document.generate(Rails.root.join("public", "pdf", "#{config_name.underscore}.pdf"), page_size:,
+                                                                                                skip_page_creation: true) do |pdf|
       Pdf::FontSelecter.new(pdf:, language:).call
       Pdf::Generator.new(pdf:, config_array:, data:, template:).call
     end
