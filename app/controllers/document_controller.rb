@@ -6,13 +6,9 @@ class DocumentController < ApplicationController
 
     api_key = selected_document.first[:api_key]
     parsed_languages = Tolgee::LanguagesFetcher.new(document_id:, api_key:).call
+
     @languages = parsed_languages["_embedded"]["languages"].map { |language| language["tag"] }
-    # language = Languages::Selecter.new(languages: @languages, language_param: params[:laguage]).call
-    language = if params[:language].present? && params[:language].in?(@languages)
-                 params[:language]
-               else
-                 @languages.first
-               end
+    language = Languages::Selecter.new(languages: @languages, language_param: params[:language]).call
 
     @documents = Documents::Mapping.new(documents:).call
     @result = Tolgee::ContentFetcher.new(document_id:, language:, api_key:).call
