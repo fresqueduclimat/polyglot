@@ -1,41 +1,39 @@
 module PolyglotFdcAdultCards
+  # PDF SIZE : 597 x 408
   # x_pos and y_pos are percentages of the width and height of the page bounds
-  # size is the font size in points
-  # style is the font style, either :normal or :bold
-  # color is the hex color code
-  # width and height are the dimensions of the text box
-  # overflow is the overflow strategy, either :expand or :shrink_to_fit
+  # width and height are percentages of the width and height of the page bounds
+  # other dimensions are in points
 
   CONFIG = [
     {
-      V0C0L0: {x_pos: 14, y_pos: 83, size: 24},
-      V1C0L0: {x_pos: 14, y_pos: 75, size: 24},
-      V1C0L3: {x_pos: 10, y_pos: 60, size: 30},
-      V1C0L15: {x_pos: 28, y_pos: 33, size: 21, style: :bold},
-      V1C0L1: {x_pos: 5, y_pos: 5},
-      V1C0L2: {x_pos: 5, y_pos: 5}
+      V0C0L0: {x_pos: 10, y_pos: 85, size: 24},
+      V1C0L0: {x_pos: 10, y_pos: 75, size: 24},
+      V1C0L3: {x_pos: 0, y_pos: 60, size: 30, width: 100, align: :center},
+      V1C0L15: {x_pos: 15, y_pos: 45, size: 21, style: :bold},
+      V1C0L1: {x_pos: 10, y_pos: 5},
+      V1C0L2: {x_pos: 10, y_pos: 5}
     },
     {
       V1C0L5: {x_pos: 10, y_pos: 89, size: 30},
-      # V1C0L6: {x_pos: 10, y_pos: 78, size: 15, width: 470, overflow: :shrink_to_fit},
-      # V1C0L7: {x_pos: 10, y_pos: 72, size: 15, width: 470, overflow: :shrink_to_fit},
-      # V1C0L8: {x_pos: 10, y_pos: 60, size: 15, width: 470, overflow: :shrink_to_fit},
-      # V1C0L9: {x_pos: 10, y_pos: 53, size: 15, width: 470, overflow: :shrink_to_fit},
-      V1C0L6: {x_pos: 10, y_pos: 78, size: 15, width: 470, height: 150, overflow: :shrink_to_fit},
-      V1C0L10: {x_pos: 73, y_pos: 36, size: 15, width: 100, height: 55, overflow: :shrink_to_fit, rotate: 346,
+      # V1C0L6: {x_pos: 10, y_pos: 78, size: 15, width: 80, overflow: :shrink_to_fit},
+      # V1C0L7: {x_pos: 10, y_pos: 72, size: 15, width: 80, overflow: :shrink_to_fit},
+      # V1C0L8: {x_pos: 10, y_pos: 60, size: 15, width: 80, overflow: :shrink_to_fit},
+      # V1C0L9: {x_pos: 10, y_pos: 53, size: 15, width: 80, overflow: :shrink_to_fit},
+      V1C0L6: {x_pos: 10, y_pos: 78, size: 15, width: 80, height: 40, overflow: :shrink_to_fit},
+      V1C0L10: {x_pos: 73, y_pos: 36, size: 15, width: 18, height: 14, overflow: :shrink_to_fit, rotate: 346,
                 valign: :center},
-      V1C0L11: {x_pos: 8, y_pos: 17, size: 15, width: 100, height: 15, overflow: :shrink_to_fit, color: "FF0000",
-                align: :center, valign: :center},
-      V1C0L12: {x_pos: 23, y_pos: 17, size: 15, width: 100, height: 15, overflow: :shrink_to_fit, color: "FF0000",
-                align: :center, valign: :center},
-      V1C0L13: {x_pos: 38, y_pos: 17, size: 15, width: 100, height: 15, overflow: :shrink_to_fit, color: "FF0000",
-                align: :center, valign: :center},
-      V1C0L14: {x_pos: 52, y_pos: 17, size: 15, width: 100, height: 15, overflow: :shrink_to_fit, color: "FF0000",
-                align: :center, valign: :center}
+      V1C0L11: {x_pos: 9, y_pos: 18, size: 12, width: 15, height: 10, overflow: :shrink_to_fit, color: "FF0000",
+                align: :center},
+      V1C0L12: {x_pos: 24, y_pos: 18, size: 12, width: 15, height: 10, overflow: :shrink_to_fit, color: "FF0000",
+                align: :center},
+      V1C0L13: {x_pos: 39, y_pos: 18, size: 12, width: 15, height: 10, overflow: :shrink_to_fit, color: "FF0000",
+                align: :center},
+      V1C0L14: {x_pos: 54, y_pos: 18, size: 12, width: 15, height: 10, overflow: :shrink_to_fit, color: "FF0000",
+                align: :center}
     },
 
     {
-      V1C1L1: {x_pos: 0, y_pos: 95, size: 60, width: 597, height: 60, overflow: :shrink_to_fit, style: :bold,
+      V1C1L1: {x_pos: 5, y_pos: 98, size: 60, width: 90, height: 20, overflow: :shrink_to_fit, style: :bold,
                color: "FFFFFF", align: :center, valign: :center}
     },
     {
@@ -43,7 +41,7 @@ module PolyglotFdcAdultCards
     },
 
     {
-      V1C5L1: {x_pos: 0, y_pos: 95, size: 60, width: 597, height: 60, overflow: :shrink_to_fit, style: :bold,
+      V1C5L1: {x_pos: 5, y_pos: 98, size: 60, width: 90, height: 20, overflow: :shrink_to_fit, style: :bold,
                color: "FFFFFF", align: :center, valign: :center},
       V1C5L11: {x_pos: 0, y_pos: 10},
       V1C5L12: {x_pos: 0, y_pos: 10},
