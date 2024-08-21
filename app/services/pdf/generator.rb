@@ -12,34 +12,41 @@ class Pdf::Generator
       @pdf.start_new_page(template: @template, template_page: index + 1)
       @pdf.font("Noto")
       page.each do |(key, config)|
-        @pdf.rotate(config[:rotate] || 0, origin: pos_from_percent(config[:x_pos], config[:y_pos])) do
+        @pdf.rotate(config[:rotate] || 0, origin: pos_percent_to_points(config[:x_pos], config[:y_pos])) do
           @pdf.fill_color(config[:color] || "000000")
           @pdf.text_box(
             @data[key],
-            at: pos_from_percent(config[:x_pos], config[:y_pos]),
+            at: pos_percent_to_points(config[:x_pos], config[:y_pos]),
             size: config[:size] || 8,
             style: config[:style] || :normal,
-            width: config[:width] || nil,
-            height: config[:height] || nil,
+            width: size_percent_to_points(config[:width], 0),
+            height: size_percent_to_points(config[:height], 1),
             overflow: config[:overflow] || :expand,
             align: config[:align] || :left,
             valign: config[:valign] || :top
           )
+          draw_bounding_box(config) # For debugging
         end
-        # draw_bounding_box(config) # For debugging
       end
     end
   end
 
   private
 
-  def pos_from_percent(x_pos, y_pos)
-    [(x_pos * @bounds[0]).fdiv(100), (y_pos * @bounds[1]).fdiv(100)]
+  def pos_percent_to_points(x_value, y_value)
+    [(x_value * @bounds[0]).fdiv(100), (y_value * @bounds[1]).fdiv(100)]
+  end
+
+  def size_percent_to_points(value, axis)
+    return nil if value.nil?
+
+    (value * @bounds[axis]).fdiv(100)
   end
 
   def draw_bounding_box(config)
-    x, y = pos_from_percent(config[:x_pos], config[:y_pos])
-    @pdf.bounding_box([x, y], width: config[:width] || 100, height: config[:height] || 12) do
+    x, y = pos_percent_to_points(config[:x_pos], config[:y_pos])
+    @pdf.bounding_box([x, y], width: size_percent_to_points(config[:width], 0) || 100,
+                              height: size_percent_to_points(config[:height], 1) || 12) do
       @pdf.stroke_bounds
     end
   end
