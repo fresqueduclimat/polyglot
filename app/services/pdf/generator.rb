@@ -14,24 +14,28 @@ class Pdf::Generator
       page.each do |(key, config)|
         @pdf.rotate(config[:rotate] || 0, origin: pos_percent_to_points(config[:x_pos], config[:y_pos])) do
           @pdf.fill_color(config[:color] || "000000")
-          @pdf.text_box(
-            @data[key],
-            at: pos_percent_to_points(config[:x_pos], config[:y_pos]),
-            size: config[:size] || 8,
-            style: config[:style] || :normal,
-            width: size_percent_to_points(config[:width], 0),
-            height: size_percent_to_points(config[:height], 1),
-            overflow: config[:overflow] || :expand,
-            align: config[:align] || :left,
-            valign: config[:valign] || :top
-          )
-          draw_bounding_box(config) # For debugging
+          draw_text_box(config, key)
+          # draw_bounding_box(config) # For debugging
         end
       end
     end
   end
 
   private
+
+  def draw_text_box(config, key)
+    @pdf.text_box(
+      @data[key],
+      at: pos_percent_to_points(config[:x_pos], config[:y_pos]),
+      size: config[:size] || 8,
+      style: config[:style] || :normal,
+      width: size_percent_to_points(config[:width], 0),
+      height: size_percent_to_points(config[:height], 1),
+      overflow: config[:overflow] || :expand,
+      align: config[:align] || :left,
+      valign: config[:valign] || :top
+    )
+  end
 
   def pos_percent_to_points(x_value, y_value)
     [(x_value * @bounds[0]).fdiv(100), (y_value * @bounds[1]).fdiv(100)]
