@@ -5,6 +5,7 @@ class Documents::Selecter
   end
 
   def call
-    @documents.values.select { |item| item[:document_id] == @document_id.to_i }
+    selected_document = @documents.values.select { |item| item[:document_id] == @document_id.to_i }
+    selected_document.first
   end
 end

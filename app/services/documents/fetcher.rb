@@ -1,7 +1,7 @@
 class Documents::Fetcher
   def call
-    Documents::Fdc.constants.map do |const|
-      [const, Documents::Fdc.const_get(const)]
+    Documents::Base.constants.map do |const|
+      [const, Documents::Base.const_get(const)]
     end.to_h
   end
 end
