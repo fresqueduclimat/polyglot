@@ -22,9 +22,11 @@ class Pdf::Generator
             width: config[:width] || nil,
             height: config[:height] || nil,
             overflow: config[:overflow] || :expand,
-            align: config[:align] || :left
+            align: config[:align] || :left,
+            valign: config[:valign] || :top
           )
         end
+        # draw_bounding_box(config) # For debugging
       end
     end
   end
@@ -33,5 +35,12 @@ class Pdf::Generator
 
   def pos_from_percent(x_pos, y_pos)
     [(x_pos * @bounds[0]).fdiv(100), (y_pos * @bounds[1]).fdiv(100)]
+  end
+
+  def draw_bounding_box(config)
+    x, y = pos_from_percent(config[:x_pos], config[:y_pos])
+    @pdf.bounding_box([x, y], width: config[:width] || 100, height: config[:height] || 12) do
+      @pdf.stroke_bounds
+    end
   end
 end
