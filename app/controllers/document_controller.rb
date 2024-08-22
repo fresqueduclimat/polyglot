@@ -18,8 +18,9 @@ class DocumentController < ApplicationController
     config_name = selected_document[:config_name]
     config_array = config_name.constantize::CONFIG
     data = @result.to_h.transform_keys(&:to_sym)
-    template = Rails.root.join("resources", "document_templates", "#{config_name.underscore}.pdf")
-    Prawn::Document.generate(Rails.root.join("public", "pdf", "#{config_name.underscore}.pdf"),
+    template = Rails.root.join("resources", "document_templates", config_name.underscore,
+                               "#{config_name.underscore}.pdf")
+    Prawn::Document.generate(Rails.root.join("public", "pdf", "#{config_name.underscore}_#{language}.pdf"),
                              page_size: selected_document[:page_size],
                              skip_page_creation: true,
                              margin: [0, 0, 0, 0]) do |pdf|
