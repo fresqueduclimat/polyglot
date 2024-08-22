@@ -10,7 +10,7 @@ class Pdf::Generator
   def call
     @config_array.each_with_index do |page, index|
       @pdf.start_new_page(template: @template, template_page: index + 1)
-      # draw_grid # For debugging
+      Pdf::DrawGrid.new(pdf: @pdf, bounds: @bounds).call # For debugging
       @pdf.font("Noto")
       page.each do |(key, config)|
         if key.to_s.include?("img")
@@ -58,23 +58,6 @@ class Pdf::Generator
     @pdf.bounding_box([x, y], width: size_percent_to_points(config[:width], 0) || 100,
                               height: size_percent_to_points(config[:height], 1) || 12) do
       @pdf.stroke_bounds
-    end
-  end
-
-  def draw_grid
-    step_percentage = 10
-    width, height = @bounds
-    # Draw vertical lines
-    (0..100).step(step_percentage).each do |percent|
-      x = (percent * width).fdiv(100)
-      @pdf.stroke_color("E8E8E8")
-      @pdf.stroke_line([x, 0], [x, height])
-    end
-    # Draw horizontal lines
-    (0..100).step(step_percentage).each do |percent|
-      y = (percent * height).fdiv(100)
-      @pdf.stroke_color("E8E8E8")
-      @pdf.stroke_line([0, y], [width, y])
     end
   end
 end
