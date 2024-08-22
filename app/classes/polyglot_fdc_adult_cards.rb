@@ -6,12 +6,14 @@ module PolyglotFdcAdultCards
 
   CONFIG = [
     {
+      img01: {url: "resources/document_templates/polyglot_fdc_adult_cards/logo.png", x_pos: 10, y_pos: 60,
+              scale: 0.4},
       V0C0L0: {x_pos: 10, y_pos: 85, width: 50, height: 10},
       V1C0L0: {x_pos: 10, y_pos: 75, width: 50, height: 10},
-      V1C0L3: {x_pos: 20, y_pos: 60, width: 70, height: 15},
-      V1C0L15: {x_pos: 20, y_pos: 45, width: 70, height: 15, style: :bold},
-      V1C0L1: {x_pos: 10, y_pos: 5, width: 50, height: 3},
-      V1C0L2: {x_pos: 10, y_pos: 5, width: 50, height: 3}
+      V1C0L15: {x_pos: 37, y_pos: 33, width: 50, height: 13},
+      V1C0L3: {x_pos: 94, y_pos: 15, width: 30, height: 4, color: "ffffff", rotate: 90},
+      V1C0L2: {x_pos: 94, y_pos: 42, width: 10, height: 4, color: "ffffff", rotate: 90}
+      # V1C0L1: {x_pos: 94, y_pos: 45, width: 50, height: 4, color: "ffffff", rotate: 90},
     },
     {
       V1C0L5: {x_pos: 10, y_pos: 90, width: 70, height: 12},

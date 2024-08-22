@@ -12,10 +12,15 @@ class Pdf::Generator
       @pdf.start_new_page(template: @template, template_page: index + 1)
       @pdf.font("Noto")
       page.each do |(key, config)|
-        @pdf.rotate(config[:rotate] || 0, origin: pos_percent_to_points(config[:x_pos], config[:y_pos])) do
-          @pdf.fill_color(config[:color] || "000000")
-          draw_text_box(config, key)
-          # draw_bounding_box(config) # For debugging
+        if key.to_s.include?("img")
+          @pdf.image(config[:url], at: pos_percent_to_points(config[:x_pos], config[:y_pos]),
+                                   scale: config[:scale] || 1)
+        else
+          @pdf.rotate(config[:rotate] || 0, origin: pos_percent_to_points(config[:x_pos], config[:y_pos])) do
+            @pdf.fill_color(config[:color] || "000000")
+            draw_text_box(config, key)
+            # draw_bounding_box(config) # For debugging
+          end
         end
       end
     end
