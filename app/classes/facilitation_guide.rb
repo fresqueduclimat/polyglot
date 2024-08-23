@@ -18,19 +18,19 @@ module FacilitationGuide
       P03L01: {x_pos: 5, y_pos: 90, width: 80, height: 5, style: :bold, color: "FF0000"}
     },
     {
-      P04L01: {x_pos: 5, y_pos: 10},
-      P04L02: {x_pos: 5, y_pos: 20},
-      P04L03: {x_pos: 5, y_pos: 30},
-      P04L04: {x_pos: 5, y_pos: 40},
-      P04L05: {x_pos: 5, y_pos: 40},
-      P04L06: {x_pos: 5, y_pos: 50}
+      P04L01: {x_pos: 5, y_pos: 10, width: 38, height: 3},
+      P04L02: {x_pos: 5, y_pos: 20, width: 38, height: 3},
+      P04L03: {x_pos: 5, y_pos: 30, width: 38, height: 3},
+      P04L04: {x_pos: 5, y_pos: 40, width: 38, height: 3},
+      P04L05: {x_pos: 5, y_pos: 40, width: 38, height: 3},
+      P04L06: {x_pos: 5, y_pos: 50, width: 38, height: 3}
     },
     {
-      P05L01: {x_pos: 5, y_pos: 10},
-      P05L02: {x_pos: 5, y_pos: 20},
-      P05L03: {x_pos: 5, y_pos: 30},
-      P05L04: {x_pos: 5, y_pos: 40},
-      P05L05: {x_pos: 5, y_pos: 50}
+      P05L01: {x_pos: 5, y_pos: 10, width: 38, height: 3},
+      P05L02: {x_pos: 5, y_pos: 20, width: 38, height: 3},
+      P05L03: {x_pos: 5, y_pos: 30, width: 38, height: 3},
+      P05L04: {x_pos: 5, y_pos: 40, width: 38, height: 3},
+      P05L05: {x_pos: 5, y_pos: 50, width: 38, height: 3}
     }
   ].freeze
 end

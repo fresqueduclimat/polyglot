@@ -10,7 +10,7 @@ class Pdf::Generator
   def call
     @config_array.each_with_index do |page, index|
       @pdf.start_new_page(template: @template, template_page: index + 1)
-      Pdf::DrawGrid.new(pdf: @pdf, bounds: @bounds).call # For debugging
+      # Pdf::DrawGrid.new(pdf: @pdf, bounds: @bounds).call # For debugging
       @pdf.font("Noto")
       page.each do |(key, config)|
         if key.to_s.include?("img")
