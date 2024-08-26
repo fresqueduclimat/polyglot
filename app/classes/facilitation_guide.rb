@@ -1,36 +1,14 @@
 module FacilitationGuide
-  # PDF SIZE : 396 x 595
   CONFIG = [
     {
-      P01L01: {x_pos: 58, y_pos: 89, width: 38, height: 3, align: :right, color: "ffffff"},
-      P01L02: {x_pos: 58, y_pos: 86, width: 38, height: 3, align: :right, color: "ffffff"},
-      P01L03: {x_pos: 10, y_pos: 65, width: 80, height: 5, style: :bold, align: :center, valign: :center,
-               color: "00c6c1"},
-      P01L04: {x_pos: 10, y_pos: 45, width: 80, height: 8, style: :bold, align: :center, color: "00c6c1"}
-    },
-    {
-      P02L01: {x_pos: 9, y_pos: 84, width: 80, height: 11, align: :center,
-               valign: :center, color: "575756"},
-      P02L02: {x_pos: 9, y_pos: 62, width: 80, height: 47, align: :justify,
-               valign: :center, color: "575756"}
-    },
-    {
-      P03L01: {x_pos: 5, y_pos: 90, width: 80, height: 5, style: :bold, color: "FF0000"}
-    },
-    {
-      P04L01: {x_pos: 5, y_pos: 10, width: 38, height: 3},
-      P04L02: {x_pos: 5, y_pos: 20, width: 38, height: 3},
-      P04L03: {x_pos: 5, y_pos: 30, width: 38, height: 3},
-      P04L04: {x_pos: 5, y_pos: 40, width: 38, height: 3},
-      P04L05: {x_pos: 5, y_pos: 40, width: 38, height: 3},
-      P04L06: {x_pos: 5, y_pos: 50, width: 38, height: 3}
-    },
-    {
-      P05L01: {x_pos: 5, y_pos: 10, width: 38, height: 3},
-      P05L02: {x_pos: 5, y_pos: 20, width: 38, height: 3},
-      P05L03: {x_pos: 5, y_pos: 30, width: 38, height: 3},
-      P05L04: {x_pos: 5, y_pos: 40, width: 38, height: 3},
-      P05L05: {x_pos: 5, y_pos: 50, width: 38, height: 3}
-    }
+  P01L01: { page: 1, x_pos: 69.94949494949495, y_pos: 89.5798319327731, width: 25.0, height: 3.5294117647058822, size: 12, color: "000000", style: :normal, rotate: 0.0, align: :right, valign: :bottom },
+  P01L02: { page: 1, x_pos: 20.95959595959596, y_pos: 45.378151260504204, width: 58.333333333333336, height: 7.394957983193278, size: 17, color: "00c6c1", style: :normal, rotate: 0.0, align: :center, valign: :bottom },
+  P01L03: { page: 1, x_pos: 20.95959595959596, y_pos: 66.05042016806723, width: 58.333333333333336, height: 16.134453781512605, size: 25, color: "00c6c1", style: :bold, rotate: 0.0, align: :center, valign: :bottom },
+  P01L04: { page: 1, x_pos: 69.94949494949495, y_pos: 85.71428571428571, width: 25.0, height: 3.5294117647058822, size: 12, color: "000000", style: :normal, rotate: 0.0, align: :right, valign: :bottom }
+},
+{
+  P02L01: { page: 2, x_pos: 6.818181818181818, y_pos: 85.54621848739495, width: 85.85858585858585, height: 13.781512605042018, size: 12, color: "000000", style: :normal, rotate: 0.0, align: :center, valign: :bottom },
+  P02L02: { page: 2, x_pos: 7.070707070707071, y_pos: 61.00840336134454, width: 85.85858585858585, height: 45.714285714285715, size: 12, color: "000000", style: :normal, rotate: 0.0, align: :center, valign: :bottom }
+}
   ].freeze
 end

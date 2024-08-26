@@ -13,6 +13,8 @@ class Pdf::Generator
       # Pdf::DrawGrid.new(pdf: @pdf, bounds: @bounds).call # For debugging
       @pdf.font("Noto")
       page.each do |(key, config)|
+        next unless @data[key]
+
         if key.to_s.include?("img")
           @pdf.image(config[:url], at: pos_percent_to_points(config[:x_pos], config[:y_pos]),
                                    scale: config[:scale] || 1)

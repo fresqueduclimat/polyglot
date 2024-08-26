@@ -1,0 +1,164 @@
+[
+  {
+    "type": "RECTANGLE",
+    "id": "P01L01",
+    "pageNumber": "1",
+    "x": 277,
+    "y": 62,
+    "width": 99,
+    "height": 21,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "P01L01",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "RIGHT",
+      "vertical": "BOTTOM"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 12,
+      "isBold": false
+    },
+    "color": [
+      "#000000"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "P01L02",
+    "pageNumber": "1",
+    "x": 83,
+    "y": 325,
+    "width": 231,
+    "height": 44,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "P01L02",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "BOTTOM"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 17,
+      "isBold": false
+    },
+    "color": [
+      "#00c6c1"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "P01L03",
+    "pageNumber": "1",
+    "x": 83,
+    "y": 202,
+    "width": 231,
+    "height": 96,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "P01L03",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "BOTTOM"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 25,
+      "isBold": true
+    },
+    "color": [
+      "#00c6c1"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "P01L04",
+    "pageNumber": "1",
+    "x": 277,
+    "y": 85,
+    "width": 99,
+    "height": 21,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "P01L04",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "RIGHT",
+      "vertical": "BOTTOM"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 12,
+      "isBold": false
+    },
+    "color": [
+      "#000000"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "P02L01",
+    "pageNumber": "2",
+    "x": 27,
+    "y": 86,
+    "width": 340,
+    "height": 82,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "P02L01",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "BOTTOM"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 12,
+      "isBold": false
+    },
+    "color": [
+      "#000000"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "P02L02",
+    "pageNumber": "2",
+    "x": 28,
+    "y": 232,
+    "width": 340,
+    "height": 272,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "P02L02",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "BOTTOM"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 12,
+      "isBold": false
+    },
+    "color": [
+      "#000000"
+    ]
+  }
+]
