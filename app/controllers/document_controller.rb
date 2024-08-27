@@ -1,6 +1,6 @@
 class DocumentController < ApplicationController
   def show
-    document_id = params[:document_id] || 7
+    document_id = params[:document_id] || 20
     documents = Documents::Fetcher.new.call
     selected_document = Documents::Selecter.new(documents:, document_id:).call
     api_key = selected_document[:api_key]
