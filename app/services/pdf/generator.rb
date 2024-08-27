@@ -35,7 +35,7 @@ class Pdf::Generator
     @pdf.text_box(
       @data[key],
       at: pos_percent_to_points(config[:x_pos], config[:y_pos]),
-      size: config[:size] || 60,
+      size: config[:size],
       style: config[:style] || :normal,
       width: size_percent_to_points(config[:width], 0),
       height: size_percent_to_points(config[:height], 1),
