@@ -119,6 +119,7 @@ GEM
       logger
     faraday-net_http (3.1.1)
       net-http
+    foreman (0.88.1)
     globalid (1.2.1)
       activesupport (>= 6.1)
     hashery (2.1.2)
@@ -341,6 +342,7 @@ DEPENDENCIES
   error_highlight (>= 0.4.0)
   factory_bot_rails
   faraday (~> 2.10)
+  foreman (~> 0.88.1)
   jbuilder
   jsbundling-rails
   lograge (~> 0.14.0)
