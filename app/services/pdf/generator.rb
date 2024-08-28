@@ -1,10 +1,11 @@
 class Pdf::Generator
-  def initialize(pdf:, config_array:, data:, template:)
+  def initialize(pdf:, config_array:, data:, template:, language:)
     @pdf = pdf
     @config_array = config_array
     @data = data
     @template = template
     @bounds = [@pdf.bounds.width, @pdf.bounds.height]
+    @language = language
   end
 
   def call
@@ -40,7 +41,7 @@ class Pdf::Generator
       width: size_percent_to_points(config[:width], 0),
       height: size_percent_to_points(config[:height], 1),
       overflow: config[:overflow] || :shrink_to_fit,
-      align: config[:align] || :left,
+      align: alignment(config),
       valign: config[:valign] || :top
     )
   end
@@ -60,6 +61,15 @@ class Pdf::Generator
     @pdf.bounding_box([x, y], width: size_percent_to_points(config[:width], 0),
                               height: size_percent_to_points(config[:height], 1)) do
       @pdf.stroke_bounds
+    end
+  end
+
+  def alignment(config)
+    case config[:align]
+    when :center then :center
+    when :right then :right
+    else
+      Documents::Languages::CONFIG[@language][:rtl] ? :right : :left
     end
   end
 end

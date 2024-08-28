@@ -27,7 +27,7 @@ class DocumentController < ApplicationController
                              skip_page_creation: true,
                              margin: [0, 0, 0, 0]) do |pdf|
       Pdf::FontSelecter.new(pdf:, language:).call
-      Pdf::Generator.new(pdf:, config_array:, data:, template:).call
+      Pdf::Generator.new(pdf:, config_array:, data:, template:, language:).call
     end
   end
 end
