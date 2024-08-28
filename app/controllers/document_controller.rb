@@ -12,10 +12,8 @@ class DocumentController < ApplicationController
     @documents = Documents::Mapping.new(documents:).call
     @result = Tolgee::ContentFetcher.new(document_id:, language:, api_key:).call
     # @img_files = Dir.glob(File.join("public/#{selected_document[:config_name].underscore}", "*.png")) # for rendering images
-    # @document_size = selected_document[:page_size] # for rendering images
+    @document_size = selected_document[:page_size]
     @pdf_file_path = "pdf/#{selected_document[:config_name].underscore}_#{language}.pdf" # for rendering generated pdf
-
-    return if document_id == 8.to_s
 
     # PDF GENERATION
     config_name = selected_document[:config_name]
