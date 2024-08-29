@@ -59,6 +59,6 @@ module Documents::Languages
     "zh-CN" => {rtl: false, font: "Urbanist", leading: 0.4},
     "zh-HK" => {rtl: false, font: "Urbanist", leading: 0.4},
     "zh-TPE" => {rtl: false, font: "Urbanist", leading: 0.4},
-    "zh-TW" => {rtl: false, font: "Urbanist"}
+    "zh-TW" => {rtl: false, font: "Urbanist", leading: 0.4}
   }.freeze
 end
