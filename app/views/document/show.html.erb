@@ -1,5 +1,4 @@
 <%= link_to(t("common.app_name"), root_path, class: "text-2xl mb-4") %>
 <%= render("document/selection_form", documents: @documents, languages: @languages) %>
-<%#= render("document/render_images", img_files: @img_files, config_array: @config_array, document_size: @document_size, result: @result) %>
 <%= render("document/render_pdf", pdf_file_path: @pdf_file_path) %>
 <%= render("document/output", result: @result) %>
