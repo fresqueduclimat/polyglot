@@ -12,7 +12,7 @@ class Pdf::Generator
     @config_array.each_with_index do |page, index|
       @pdf.start_new_page(template: @template, template_page: index + 1)
       # Pdf::DrawGrid.new(pdf: @pdf, bounds: @bounds).call # For debugging
-      @pdf.font("Noto")
+      @pdf.font("Font")
       page.each do |(key, config)|
         next unless @data[key]
 
