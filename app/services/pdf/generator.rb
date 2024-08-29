@@ -20,6 +20,7 @@ class Pdf::Generator
           @pdf.image(config[:url], at: pos_percent_to_points(config[:x_pos], config[:y_pos]),
                                    scale: config[:scale] || 1)
         else
+          set_leading(size: config[:size])
           @pdf.rotate(config[:rotate] || 0, origin: pos_percent_to_points(config[:x_pos], config[:y_pos])) do
             @pdf.fill_color(config[:color] || "000000")
             draw_text_box(config, key)
@@ -31,6 +32,10 @@ class Pdf::Generator
   end
 
   private
+
+  def set_leading(size: 0)
+    @pdf.default_leading = Documents::Languages::CONFIG[@language][:leading] * size || 0.1
+  end
 
   def draw_text_box(config, key)
     @pdf.text_box(
