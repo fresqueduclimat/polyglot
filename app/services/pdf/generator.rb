@@ -16,18 +16,14 @@ class Pdf::Generator
       page.each do |(key, config)|
         next unless @data[key]
 
-        if key.to_s.include?("img")
-          @pdf.image(config[:url], at: pos_percent_to_points(config[:x_pos], config[:y_pos]),
-                                   scale: config[:scale] || 1)
-        else
-          set_leading(size: config[:size])
-          @pdf.rotate(config[:rotate] || 0, origin: pos_percent_to_points(config[:x_pos], config[:y_pos])) do
-            @pdf.fill_color(config[:color] || "000000")
-            draw_text_box(config, key)
-            # draw_bounding_box(config) # For debugging
-          end
+        set_leading(size: config[:size])
+        @pdf.rotate(config[:rotate] || 0, origin: pos_percent_to_points(config[:x_pos], config[:y_pos])) do
+          @pdf.fill_color(config[:color] || "000000")
+          insert_text(config, key)
+          # draw_bounding_box(config) # For debugging
         end
       end
+      insert_images(page_number: index)
     end
   end
 
@@ -37,7 +33,7 @@ class Pdf::Generator
     @pdf.default_leading = Documents::Languages::CONFIG[@language][:leading] * size || 0.1
   end
 
-  def draw_text_box(config, key)
+  def insert_text(config, key)
     @pdf.text_box(
       @data[key],
       at: pos_percent_to_points(config[:x_pos], config[:y_pos]),
@@ -49,6 +45,16 @@ class Pdf::Generator
       align: alignment(config),
       valign: config[:valign] || :top
     )
+  end
+
+  def insert_images(page_number:)
+    PolyglotFdcAdultCardsImages::CONFIG[page_number.to_s.to_sym]&.each_value do |config|
+      image_config = config[@language]
+      next unless image_config
+
+      @pdf.image(image_config[:url], at: [pos_percent_to_points(image_config[:x_pos], image_config[:y_pos])],
+                                     scale: image_config[:scale])
+    end
   end
 
   def pos_percent_to_points(x_value, y_value)
