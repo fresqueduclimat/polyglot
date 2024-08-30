@@ -29,8 +29,9 @@ class Pdf::Generator
 
   private
 
-  def set_leading(size: 0)
-    @pdf.default_leading = Documents::Languages::CONFIG[@language][:leading] * size || 0.1
+  def set_leading(size:)
+    leading = Documents::Languages::CONFIG[@language][:leading] || 0.4
+    @pdf.default_leading = leading * size
   end
 
   def insert_text(config, key)
