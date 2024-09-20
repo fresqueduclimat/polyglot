@@ -7,9 +7,13 @@ namespace :generate do
     # page_height = 408
     # project_name = "polyglot_fdc_adult_cards"
 
-    page_width = 396
-    page_height = 595
-    project_name = "facilitation_guide"
+    # page_width = 396
+    # page_height = 595
+    # project_name = "facilitation_guide"
+
+    page_width = 960
+    page_height = 540
+    project_name = "facilitation_kit"
 
     # Load the JSON file
     json_file_path = Rails.root.join("resources", "document_templates", project_name, "#{project_name}.json")

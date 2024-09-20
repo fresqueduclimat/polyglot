@@ -14,4 +14,12 @@ module Documents::Base
     page_size: [396, 595],
     api_key: ENV["FACILITATION_GUIDE"]
   }.freeze
+
+  FACILITATION_KIT = {
+    config_name: "FacilitationKit",
+    document_id: 24,
+    name: "Facilitation Kit",
+    page_size: [960, 540],
+    api_key: ENV["FACILITATION_KIT"]
+  }.freeze
 end
