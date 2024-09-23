@@ -3,7 +3,7 @@ class Data::ImportService
     @project_name = project_name
     @page_width = page_width
     @page_height = page_height
-    @ruby_file_path = Rails.root.join("app", "classes", "#{@project_name}.rb")
+    @ruby_file_path = Rails.root.join("app", "classes", "documents", "#{@project_name}.rb")
   end
 
   def call
@@ -49,7 +49,7 @@ class Data::ImportService
 
   def generate_ruby_file_content(sorted_config)
     <<~RUBY
-      module #{@project_name.camelize}
+      module Documents::#{@project_name.camelize}
         CONFIG = [
           #{sorted_config.join(",\n")}
         ].freeze
