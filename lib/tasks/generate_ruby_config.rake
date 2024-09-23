@@ -12,7 +12,7 @@ PROJECT_NAME = "facilitation_kit".freeze
 
 namespace :generate do
   task generate_ruby_config: :environment do
-    Data::Import.new(
+    ::Data::ImportService.new(
       project_name: PROJECT_NAME,
       page_width: PAGE_WIDTH,
       page_height: PAGE_HEIGHT

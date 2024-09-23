@@ -1,4 +1,4 @@
-class Data::Import
+class Data::ImportService
   def initialize(project_name:, page_width:, page_height:)
     @project_name = project_name
     @page_width = page_width
@@ -9,7 +9,8 @@ class Data::Import
   def call
     grouped_data = group_elements_by_id(load_json_data)
 
-    config_hash = Data::BuildConfigHash.new(grouped_data:, page_width: @page_width, page_height: @page_height).call
+    config_hash = ::Data::BuildConfigHashService.new(grouped_data:, page_width: @page_width,
+                                                     page_height: @page_height).call
 
     sorted_config = sort_config_hash_by_page_number(config_hash)
 

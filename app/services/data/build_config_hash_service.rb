@@ -1,4 +1,4 @@
-class Data::BuildConfigHash
+class Data::BuildConfigHashService
   def initialize(grouped_data:, page_width:, page_height:)
     @grouped_data = grouped_data
     @page_width = page_width
