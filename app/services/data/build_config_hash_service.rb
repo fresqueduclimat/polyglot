@@ -27,7 +27,6 @@ class Data::BuildConfigHashService
 
   def build_element_attributes(rectangle, text)
     {
-      page: rectangle["pageNumber"].to_i,
       x_pos: point_to_percent(rectangle["x"].to_f, @page_width),
       y_pos: 100 - point_to_percent(rectangle["y"].to_f, @page_height),
       width: point_to_percent(rectangle["width"].to_f, @page_width),

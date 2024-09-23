@@ -1,7 +1,7 @@
-class Pdf::Generator
-  def initialize(pdf:, config_array:, data:, template:, language:)
+class Pdf::GeneratorService
+  def initialize(pdf:, config_module:, data:, template:, language:)
     @pdf = pdf
-    @config_array = config_array
+    @config_module = config_module
     @data = data
     @template = template
     @bounds = [@pdf.bounds.width, @pdf.bounds.height]
@@ -9,11 +9,11 @@ class Pdf::Generator
   end
 
   def call
-    @config_array.each_with_index do |page, index|
-      @pdf.start_new_page(template: @template, template_page: index + 1)
-      # Pdf::DrawGrid.new(pdf: @pdf, bounds: @bounds).call # For debugging
+    @config_module.each do |page_number, configs|
+      @pdf.start_new_page(template: @template, template_page: page_number)
+      # ::Pdf::DrawGridService.new(pdf: @pdf, bounds: @bounds).call # For debugging
       @pdf.font("Font")
-      page.each do |(key, config)|
+      configs.each do |(key, config)|
         next unless @data[key]
 
         set_leading(size: config[:size])
@@ -22,8 +22,8 @@ class Pdf::Generator
           insert_text(config, key)
           # draw_bounding_box(config) # For debugging
         end
+        insert_images(page_number: page_number + 1)
       end
-      insert_images(page_number: index)
     end
   end
 
@@ -42,14 +42,14 @@ class Pdf::Generator
       style: config[:style] || :normal,
       width: size_percent_to_points(config[:width], 0),
       height: size_percent_to_points(config[:height], 1),
-      overflow: config[:overflow] || :shrink_to_fit,
+      overflow: :shrink_to_fit,
       align: alignment(config),
       valign: config[:valign] || :top
     )
   end
 
   def insert_images(page_number:)
-    PolyglotFdcAdultCardsImages::CONFIG[page_number.to_s.to_sym]&.each_value do |config|
+    Documents::PolyglotFdcAdultCardsImages::CONFIG[page_number]&.each_value do |config|
       image_config = config[@language]
       next unless image_config
 

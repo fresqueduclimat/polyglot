@@ -1,4 +1,4 @@
-class Pdf::DrawGrid
+class Pdf::DrawGridService
   def initialize(pdf:, bounds:)
     @pdf = pdf
     @bounds = bounds

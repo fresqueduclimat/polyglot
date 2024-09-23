@@ -15,8 +15,7 @@ class DocumentController < ApplicationController
 
     # PDF GENERATION
     config_name = selected_document[:config_name]
-    config_array = config_name.constantize::CONFIG
-    @config_array = config_array
+    config_module = "Documents::#{config_name}::CONFIG".constantize
     data = @result.to_h.transform_keys(&:to_sym)
     template = Rails.root.join("resources", "document_templates", config_name.underscore,
                                "#{config_name.underscore}.pdf")
@@ -24,8 +23,8 @@ class DocumentController < ApplicationController
                              page_size: selected_document[:page_size],
                              skip_page_creation: true,
                              margin: [0, 0, 0, 0]) do |pdf|
-      Pdf::FontSelecter.new(pdf:, language:).call
-      Pdf::Generator.new(pdf:, config_array:, data:, template:, language:).call
+      ::Pdf::FontSelecterService.new(pdf:, language:).call
+      ::Pdf::GeneratorService.new(pdf:, config_module:, data:, template:, language:).call
     end
   end
 end
