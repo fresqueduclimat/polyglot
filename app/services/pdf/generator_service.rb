@@ -22,8 +22,8 @@ class Pdf::GeneratorService
           insert_text(config, key)
           # draw_bounding_box(config) # For debugging
         end
+        insert_images(page_number: page_number + 1)
       end
-      insert_images(page_number:)
     end
   end
 

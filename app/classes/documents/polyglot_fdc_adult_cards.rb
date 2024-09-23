@@ -1,6 +1,6 @@
 module Documents::PolyglotFdcAdultCards
   CONFIG = {
-    1 => {
+    0 => {
       V0C0L0: {page: 0, x_pos: 11.055276381909549, y_pos: 84.55882352941177, width: 18.927973199329983,
                height: 9.068627450980392, size: 24, color: "000000", style: :normal, rotate: 0.0, align: :left, valign: :top},
       V1C0L0: {page: 0, x_pos: 11.222780569514239, y_pos: 74.75490196078431, width: 18.927973199329983,
@@ -8,7 +8,7 @@ module Documents::PolyglotFdcAdultCards
       V1C0L15: {page: 0, x_pos: 26.80067001675042, y_pos: 31.862745098039213, width: 60.301507537688444,
                 height: 7.107843137254902, size: 21, color: "000000", style: :normal, rotate: 0.0, align: :left, valign: :top}
     },
-    2 => {
+    1 => {
       V1C0L5: {page: 1, x_pos: 7.5376884422110555, y_pos: 89.4607843137255, width: 64.48911222780569,
                height: 10.53921568627451, size: 30, color: "e71e25", style: :bold, rotate: 0.0, align: :left, valign: :top},
       V1C0L6: {page: 1, x_pos: 7.5376884422110555, y_pos: 78.67647058823529, width: 84.92462311557789,
@@ -24,17 +24,17 @@ module Documents::PolyglotFdcAdultCards
       V1C0L14: {page: 1, x_pos: 54.438860971524285, y_pos: 16.66666666666667, width: 13.06532663316583,
                 height: 6.372549019607843, size: 13, color: "e71e25", style: :bold, rotate: 0.0, align: :center, valign: :top}
     },
-    3 => {
+    2 => {
       V1C1L1: {page: 2, x_pos: 2.847571189279732, y_pos: 93.13725490196079, width: 94.30485762144053,
                height: 15.686274509803921, size: 49, color: "ffffff", style: :bold, rotate: 0.0, align: :center, valign: :center}
     },
-    4 => {
+    3 => {
       V1C0L4: {page: 3, x_pos: 5.8626465661641545, y_pos: 15.196078431372555, width: 14.40536013400335,
                height: 8.088235294117647, size: 20, color: "ffffff", style: :normal, rotate: 0.0, align: :center, valign: :center},
       V1C1L2: {page: 3, x_pos: 6.700167504187605, y_pos: 70.09803921568627, width: 86.59966499162479,
                height: 48.28431372549019, size: 39, color: "000000", style: :normal, rotate: 0.0, align: :center, valign: :center}
     },
-    5 => {
+    4 => {
       V1C5L1: {page: 4, x_pos: 2.847571189279732, y_pos: 93.13725490196079, width: 94.30485762144053,
                height: 15.686274509803921, size: 36, color: "ffffff", style: :bold, rotate: 0.0, align: :center, valign: :center},
       V1C5L5: {page: 4, x_pos: 23.115577889447238, y_pos: 71.81372549019608, width: 34.17085427135678,
@@ -52,7 +52,7 @@ module Documents::PolyglotFdcAdultCards
       V1C5L15: {page: 4, x_pos: 61.139028475711896, y_pos: 73.2843137254902, width: 9.547738693467336,
                 height: 4.166666666666667, size: 11, color: "980002", style: :bold, rotate: 0.0, align: :center, valign: :center}
     },
-    6 => {
+    5 => {
       V1C5L2: {page: 5, x_pos: 6.700167504187605, y_pos: 70.09803921568627, width: 86.59966499162479,
                height: 48.28431372549019, size: 30, color: "000000", style: :normal, rotate: 0.0, align: :center, valign: :center}
     }
