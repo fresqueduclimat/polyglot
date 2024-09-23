@@ -1,4 +1,4 @@
-class Pdf::Generator
+class Pdf::GeneratorService
   def initialize(pdf:, config_module:, data:, template:, language:)
     @pdf = pdf
     @config_module = config_module
@@ -11,7 +11,7 @@ class Pdf::Generator
   def call
     @config_module.each do |page_number, configs|
       @pdf.start_new_page(template: @template, template_page: page_number)
-      # Pdf::DrawGrid.new(pdf: @pdf, bounds: @bounds).call # For debugging
+      # ::Pdf::DrawGridService.new(pdf: @pdf, bounds: @bounds).call # For debugging
       @pdf.font("Font")
       configs.each do |(key, config)|
         next unless @data[key]

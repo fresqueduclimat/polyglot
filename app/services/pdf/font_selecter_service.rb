@@ -1,4 +1,4 @@
-class Pdf::FontSelecter
+class Pdf::FontSelecterService
   def initialize(pdf:, language:)
     @pdf = pdf
     @language = language
