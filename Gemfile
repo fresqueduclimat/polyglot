@@ -15,6 +15,7 @@ gem "prawn-templates"
 gem "propshaft"
 gem "puma", ">= 5.0"
 gem "rails", "~> 7.2"
+gem "solid_queue", "~> 0.9.0"
 gem "stimulus-rails"
 gem "turbo-rails"
 gem "tzinfo-data", platforms: %i[windows jruby]

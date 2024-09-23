@@ -69,4 +69,6 @@ Rails.application.configure do
   config.action_controller.raise_on_missing_callback_actions = true
 
   config.web_console.allowed_ips = ["0.0.0.0/0"]
+
+  config.active_job.queue_adapter = :solid_queue
 end
