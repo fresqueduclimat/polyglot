@@ -1,4 +1,4 @@
-class Languages::Selecter
+class Languages::SelecterService
   def initialize(languages:, language_param:)
     @languages = languages
     @language_param = language_param

@@ -5,7 +5,7 @@ class Pdf::FontSelecterService
   end
 
   def call
-    font = Documents::Languages::CONFIG[@language][:font]
+    font = ::Documents::Languages::CONFIG[@language][:font]
     font_paths = font_paths_for(font)
 
     @pdf.font_families.update("Font" => {

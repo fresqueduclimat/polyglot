@@ -30,7 +30,7 @@ class Pdf::GeneratorService
   private
 
   def set_leading(size:)
-    leading = Documents::Languages::CONFIG[@language][:leading] || 0.4
+    leading = ::Documents::Languages::CONFIG[@language][:leading] || 0.4
     @pdf.default_leading = leading * size
   end
 
@@ -49,7 +49,7 @@ class Pdf::GeneratorService
   end
 
   def insert_images(page_number:)
-    Documents::PolyglotFdcAdultCardsImages::CONFIG[page_number]&.each_value do |config|
+    ::Documents::PolyglotFdcAdultCardsImages::CONFIG[page_number]&.each_value do |config|
       image_config = config[@language]
       next unless image_config
 
@@ -81,7 +81,7 @@ class Pdf::GeneratorService
     when :center then :center
     when :right then :right
     else
-      Documents::Languages::CONFIG[@language][:rtl] ? :right : :left
+      ::Documents::Languages::CONFIG[@language][:rtl] ? :right : :left
     end
   end
 end

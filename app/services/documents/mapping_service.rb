@@ -1,4 +1,4 @@
-class Documents::Mapping
+class Documents::MappingService
   def initialize(documents:)
     @documents = documents
   end

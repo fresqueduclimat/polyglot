@@ -1,4 +1,4 @@
-class Documents::Selecter
+class Documents::SelecterService
   def initialize(documents:, document_id:)
     @documents = documents
     @document_id = document_id
