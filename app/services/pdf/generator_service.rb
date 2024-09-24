@@ -1,16 +1,16 @@
 class Pdf::GeneratorService
-  def initialize(pdf:, config_module:, data:, template:, language:)
+  def initialize(pdf:, config_module:, data:, template_path:, language:)
     @pdf = pdf
     @config_module = config_module
     @data = data
-    @template = template
+    @template_path = template_path
     @bounds = [@pdf.bounds.width, @pdf.bounds.height]
     @language = language
   end
 
   def call
     @config_module.each do |page_number, configs|
-      @pdf.start_new_page(template: @template, template_page: page_number)
+      @pdf.start_new_page(template: @template_path, template_page: page_number)
       # ::Pdf::DrawGridService.new(pdf: @pdf, bounds: @bounds).call # For debugging
       @pdf.font("Font")
       configs.each do |(key, config)|

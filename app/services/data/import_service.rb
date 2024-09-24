@@ -1,5 +1,5 @@
 class Data::ImportService
-  CONFIG_DIR = Rails.root.join("resources", "document_templates")
+  CONFIG_DIR = Rails.root.join("resources", "templates")
   RUBY_FILE_DIR = Rails.root.join("app", "classes", "documents")
 
   def initialize(project_name:, page_width:, page_height:)
