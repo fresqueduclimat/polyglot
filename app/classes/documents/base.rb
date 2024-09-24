@@ -1,4 +1,12 @@
 module Documents::Base
+  FDC_ADULT_CARDS = {
+    config_name: "FdcAdultCards",
+    document_id: 7,
+    name: "Adult cards",
+    page_size: [597, 408],
+    api_key: ENV["FDC_ADULT_CARDS"]
+  }.freeze
+
   POLYGLOT_FDC_ADULT_CARDS = {
     config_name: "PolyglotFdcAdultCards",
     document_id: 20,
