@@ -31,6 +31,7 @@ end
 
 group :development do
   gem "error_highlight", ">= 0.4.0", platforms: [:ruby]
+  gem "letter_opener_web"
   gem "rubocop", "~> 1.59"
   gem "web-console"
 end
