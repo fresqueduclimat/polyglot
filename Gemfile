@@ -15,8 +15,12 @@ gem "prawn", "~> 2.5"
 gem "prawn-templates"
 gem "propshaft"
 gem "puma", ">= 5.0"
+gem "pundit", "~> 2.4"
 gem "rails", "~> 7.2"
+gem "sentry-rails"
+gem "sentry-ruby"
 gem "solid_queue", "~> 0.9.0"
+gem "stackprof"
 gem "stimulus-rails"
 gem "turbo-rails"
 gem "tzinfo-data", platforms: %i[windows jruby]
@@ -32,6 +36,7 @@ end
 
 group :development do
   gem "error_highlight", ">= 0.4.0", platforms: [:ruby]
+  gem "letter_opener_web"
   gem "rubocop", "~> 1.59"
   gem "web-console"
 end
