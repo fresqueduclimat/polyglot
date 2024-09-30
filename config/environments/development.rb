@@ -71,4 +71,6 @@ Rails.application.configure do
   config.web_console.allowed_ips = ["0.0.0.0/0"]
 
   config.active_job.queue_adapter = :solid_queue
+
+  config.action_mailer.delivery_method = :letter_opener_web
 end
