@@ -4,7 +4,7 @@ module Documents::Base
     document_id: 7,
     name: "Adult cards",
     page_size: [597, 408],
-    api_key: ENV["FDC_ADULT_CARDS"]
+    api_key: ENV["TOLGEE_FDC_ADULT_CARDS"]
   }.freeze
 
   POLYGLOT_FDC_ADULT_CARDS = {
@@ -12,7 +12,7 @@ module Documents::Base
     document_id: 20,
     name: "Polyglot adult cards",
     page_size: [597, 408],
-    api_key: ENV["POLYGLOT_FDC_ADULT_CARDS"]
+    api_key: ENV["TOLGEE_POLYGLOT_FDC_ADULT_CARDS"]
   }.freeze
 
   FACILITATION_GUIDE = {
@@ -20,7 +20,7 @@ module Documents::Base
     document_id: 22,
     name: "Facilitation Guide",
     page_size: [396, 595],
-    api_key: ENV["FACILITATION_GUIDE"]
+    api_key: ENV["TOLGEE_FACILITATION_GUIDE"]
   }.freeze
 
   FACILITATION_KIT = {
@@ -28,6 +28,6 @@ module Documents::Base
     document_id: 24,
     name: "Facilitation Kit",
     page_size: [960, 540],
-    api_key: ENV["FACILITATION_KIT"]
+    api_key: ENV["TOLGEE_FACILITATION_KIT"]
   }.freeze
 end
