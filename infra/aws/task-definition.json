@@ -1,0 +1,67 @@
+{
+	"cpu": "${TASK_CPU}",
+	"memory": "${TASK_MEMORY}",
+	"volumes": [],
+	"networkMode": "awsvpc",
+	"family": "${PRODUCT}-${ENVIRONMENT}",
+	"requiresCompatibilities": ["FARGATE"],
+	"placementConstraints": [],
+	"executionRoleArn": "arn:aws:iam::${AWS_ACCOUNT_ID}:role/${PRODUCT}-ecs-taskexec-${AWS_REGION}-${ENVIRONMENT}",
+	"taskRoleArn": "arn:aws:iam::${AWS_ACCOUNT_ID}:role/${PRODUCT}-ecs-task-${AWS_REGION}-${ENVIRONMENT}",
+	"containerDefinitions": [
+		{
+			"name": "${PRODUCT}",
+			"cpu": "${TASK_CPU}",
+			"memory": "${TASK_MEMORY}",
+			"linuxParameters":
+				{
+					"initProcessEnabled": true
+				},
+			"essential": true,
+			"volumesFrom": [],
+			"mountPoints": [],
+			"image": "",
+			"environment": [
+				{
+					"name": "RAILS_ENV",
+					"value": "${RAILS_ENV}"
+				},
+				{
+					"name": "ENVIRONMENT",
+					"value": "${ENVIRONMENT}"
+				}
+			],
+			"secrets": [
+				{
+					"name": "SMTP_USERNAME",
+					"valueFrom": "arn:aws:ssm:${AWS_REGION}:${AWS_ACCOUNT_ID}:parameter/${ENVIRONMENT}/${PRODUCT}/smtp_username"
+				},
+				{
+					"name": "SMTP_PASSWORD",
+					"valueFrom": "arn:aws:ssm:${AWS_REGION}:${AWS_ACCOUNT_ID}:parameter/${ENVIRONMENT}/${PRODUCT}/smtp_password"
+				},
+				{
+					"name": "TOLGEE_FDC_ADULT_CARDS",
+					"valueFrom": "arn:aws:ssm:${AWS_REGION}:${AWS_ACCOUNT_ID}:parameter/${ENVIRONMENT}/${PRODUCT}/tolgee_fdc_adult_cards"
+				},
+				{
+					"name": "TOLGEE_FACILITATION_KIT",
+					"valueFrom": "arn:aws:ssm:${AWS_REGION}:${AWS_ACCOUNT_ID}:parameter/${ENVIRONMENT}/${PRODUCT}/tolgee_facilitation_kit"
+				},
+				{
+					"name": "TOLGEE_FACILITATION_GUIDE",
+					"valueFrom": "arn:aws:ssm:${AWS_REGION}:${AWS_ACCOUNT_ID}:parameter/${ENVIRONMENT}/${PRODUCT}/tolgee_facilitation_guide"
+				}
+			],
+			"logConfiguration": {
+				"logDriver": "awslogs",
+				"options": {
+					"awslogs-group": "/fargate/service/${PRODUCT}-${APPLICATION}-${ENVIRONMENT}",
+					"awslogs-region": "${AWS_REGION}",
+					"awslogs-stream-prefix": "ecs"
+				}
+			}
+		}
+	]
+}
+  
