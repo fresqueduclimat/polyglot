@@ -19,4 +19,10 @@ RUN bundle install -j $(nproc)
 COPY package.json yarn.lock ./
 RUN yarn install --ignore-scripts
 
-CMD ["rails", "server", "-b", "0.0.0.0"]
+RUN chmod +x ./infra/scripts/startup_polyglot.sh
+ENTRYPOINT [ "./infra/scripts/startup_polyglot.sh" ]
+
+
+EXPOSE 80
+
+CMD ["rails", "-p", "80", "server", "-b", "0.0.0.0"]
