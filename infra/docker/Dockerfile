@@ -2,6 +2,9 @@ FROM ruby:3.3.0
 
 ENV RAILS_ENV=development
 
+WORKDIR /app
+ADD . ./
+
 RUN apt update -qq && \
   apt install -y --no-install-recommends build-essential libpq-dev curl && \
   curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg -o /root/yarn-pubkey.gpg && \
@@ -11,17 +14,15 @@ RUN apt update -qq && \
   apt install -y --no-install-recommends nodejs yarn && \
   apt clean && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /app
-
 COPY Gemfile* ./
 RUN bundle install -j $(nproc)
 
 COPY package.json yarn.lock ./
 RUN yarn install --ignore-scripts
 
+COPY /infra/scripts/startup_polyglot.sh ./infra/scripts/
 RUN chmod +x ./infra/scripts/startup_polyglot.sh
 ENTRYPOINT [ "./infra/scripts/startup_polyglot.sh" ]
-
 
 EXPOSE 80
 
