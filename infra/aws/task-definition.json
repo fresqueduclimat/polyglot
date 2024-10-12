@@ -21,6 +21,13 @@
 			"volumesFrom": [],
 			"mountPoints": [],
 			"image": "",
+			"portMappings": [
+				{
+				  "protocol": "tcp",
+				  "containerPort": "${API_PORT}",
+				  "hostPort": "${API_PORT}"
+				}
+			  ],
 			"environment": [
 				{
 					"name": "RAILS_ENV",

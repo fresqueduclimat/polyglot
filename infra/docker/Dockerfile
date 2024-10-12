@@ -1,7 +1,5 @@
 FROM ruby:3.3.0
 
-ENV RAILS_ENV=development
-
 WORKDIR /app
 ADD . ./
 
