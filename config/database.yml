@@ -17,5 +17,5 @@ test:
 production:
   <<: *default
   database: polyglot_production
-  username: <%= ENV['DATABASE_USERNAME'] %>
+  username: <%= ENV['DATABASE_USER'] %>
   password: <%= ENV['DATABASE_PASSWORD'] %>
