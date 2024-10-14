@@ -40,6 +40,22 @@
 			],
 			"secrets": [
 				{
+					"name": "DATABASE_HOST",
+					"valueFrom": "arn:aws:ssm:${AWS_REGION}:${AWS_ACCOUNT_ID}:parameter/${ENVIRONMENT}/${PRODUCT}/db_host"
+				},
+				{
+					"name": "DATABASE_NAME",
+					"valueFrom": "arn:aws:ssm:${AWS_REGION}:${AWS_ACCOUNT_ID}:parameter/${ENVIRONMENT}/${PRODUCT}/db_name"
+				},
+				{
+					"name": "DATABASE_USER",
+					"valueFrom": "arn:aws:ssm:${AWS_REGION}:${AWS_ACCOUNT_ID}:parameter/${ENVIRONMENT}/${PRODUCT}/db_username"
+				},
+				{
+					"name": "DATABASE_PASSWORD",
+					"valueFrom": "arn:aws:ssm:${AWS_REGION}:${AWS_ACCOUNT_ID}:parameter/${ENVIRONMENT}/${PRODUCT}/db_password"
+				},
+				{
 					"name": "SMTP_USERNAME",
 					"valueFrom": "arn:aws:ssm:${AWS_REGION}:${AWS_ACCOUNT_ID}:parameter/${ENVIRONMENT}/${PRODUCT}/smtp_username"
 				},
@@ -58,6 +74,10 @@
 				{
 					"name": "TOLGEE_FACILITATION_GUIDE",
 					"valueFrom": "arn:aws:ssm:${AWS_REGION}:${AWS_ACCOUNT_ID}:parameter/${ENVIRONMENT}/${PRODUCT}/tolgee_facilitation_guide"
+				},
+				{
+					"name": "SECRET_KEY_BASE",
+					"valueFrom": "arn:aws:ssm:${AWS_REGION}:${AWS_ACCOUNT_ID}:parameter/${ENVIRONMENT}/${PRODUCT}/secret_key_base"
 				}
 			],
 			"logConfiguration": {
