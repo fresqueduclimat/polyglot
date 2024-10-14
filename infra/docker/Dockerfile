@@ -12,16 +12,13 @@ RUN apt update -qq && \
   apt install -y --no-install-recommends nodejs yarn && \
   apt clean && rm -rf /var/lib/apt/lists/*
 
-COPY Gemfile* ./
 RUN bundle install -j $(nproc)
 
-COPY package.json yarn.lock ./
 RUN yarn install --ignore-scripts
 
-COPY /infra/scripts/startup_polyglot.sh ./infra/scripts/
 RUN chmod +x ./infra/scripts/startup_polyglot.sh
 ENTRYPOINT [ "./infra/scripts/startup_polyglot.sh" ]
 
-EXPOSE 80
+EXPOSE 3000
 
-CMD ["rails", "-p", "80", "server", "-b", "0.0.0.0"]
+CMD ["rails", "-p", "3000", "server", "-b", "0.0.0.0", "-e", "production"]
