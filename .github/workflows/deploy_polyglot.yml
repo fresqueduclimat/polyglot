@@ -69,6 +69,8 @@ jobs:
         run: yarn check || bin/rails yarn:install
 
       - name: Precompile assets
+        env:
+          SECRET_KEY_BASE: ${{ secrets.SECRET_KEY_BASE }}
         run: RAILS_ENV=production bundle exec rails assets:precompile
 
       - name: Configure AWS credentials
