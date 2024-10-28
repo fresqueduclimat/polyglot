@@ -68,6 +68,9 @@ jobs:
       - name: Yarn Install
         run: yarn check || bin/rails yarn:install
 
+      - name: Precompile assets
+        run: RAILS_ENV=production bundle exec rails assets:precompile
+
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
