@@ -1,6 +1,6 @@
 # PAGE_WIDTH = 597
 # PAGE_HEIGHT = 408
-# PROJECT_NAME = "polyglot_fdc_adult_cards".freeze
+# PROJECT_NAME = "fdc_adult_cards".freeze
 
 # PAGE_WIDTH = 396
 # PAGE_HEIGHT = 595

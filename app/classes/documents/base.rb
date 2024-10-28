@@ -7,14 +7,6 @@ module Documents::Base
     api_key: ENV["TOLGEE_FDC_ADULT_CARDS"]
   }.freeze
 
-  POLYGLOT_FDC_ADULT_CARDS = {
-    config_name: "PolyglotFdcAdultCards",
-    document_id: 20,
-    name: "Polyglot adult cards",
-    page_size: [597, 408],
-    api_key: ENV["TOLGEE_POLYGLOT_FDC_ADULT_CARDS"]
-  }.freeze
-
   FACILITATION_GUIDE = {
     config_name: "FacilitationGuide",
     document_id: 22,

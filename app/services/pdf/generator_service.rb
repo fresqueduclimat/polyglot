@@ -49,7 +49,7 @@ class Pdf::GeneratorService
   end
 
   def insert_images(page_number:)
-    ::Documents::PolyglotFdcAdultCardsImages::CONFIG[page_number]&.each_value do |config|
+    ::Documents::FdcAdultCardsImages::CONFIG[page_number]&.each_value do |config|
       image_config = config[@language]
       next unless image_config
 

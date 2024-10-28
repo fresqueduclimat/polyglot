@@ -1,5 +1,5 @@
 module Documents::FdcAdultCardsImages
-  BASE_PATH = "public/images/polyglot_fdc_adult_cards".freeze
+  BASE_PATH = "public/images/fdc_adult_cards".freeze
   CONFIG = {
     1 => {
       IMG01: {
