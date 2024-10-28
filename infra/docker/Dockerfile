@@ -15,9 +15,9 @@ RUN bundle install
 RUN chmod +x ./infra/scripts/startup_polyglot.sh
 ENTRYPOINT [ "./infra/scripts/startup_polyglot.sh" ]
 
-EXPOSE 80
+EXPOSE 3000
 
-CMD ["rails", "server", "-p", "80", "-b", "0.0.0.0", "-e", "production"]
+CMD ["rails", "server", "-p", "3000", "-b", "0.0.0.0", "-e", "production"]
 
 
 # WORKDIR /app
