@@ -40,5 +40,6 @@
 /node_modules
 
 /public/pdf/*
+!/public/pdf/.keep
 
 /config/credentials/production.key
