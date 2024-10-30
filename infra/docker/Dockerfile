@@ -11,10 +11,10 @@ RUN apt-get update && apt-get install -y yarn
 COPY Gemfile Gemfile.lock ./
 RUN gem install bundler
 RUN bundle install
+RUN bundle exec rails assets:precompile
 
 RUN chmod +x ./infra/scripts/startup_polyglot.sh
 ENTRYPOINT [ "./infra/scripts/startup_polyglot.sh" ]
-RUN bundle exec rails assets:precompile
 
 EXPOSE 3000
 
