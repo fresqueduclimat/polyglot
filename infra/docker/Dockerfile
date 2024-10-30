@@ -14,6 +14,7 @@ RUN bundle install
 
 RUN chmod +x ./infra/scripts/startup_polyglot.sh
 ENTRYPOINT [ "./infra/scripts/startup_polyglot.sh" ]
+RUN bundle exec rails assets:precompile
 
 EXPOSE 3000
 
