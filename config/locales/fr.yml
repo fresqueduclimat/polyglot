@@ -213,3 +213,9 @@ fr:
       long: "%A %d %B %Y %Hh%M"
       short: "%Hh%M"
     pm: pm
+  homepage:
+    description: Polyglot est notre outil de mise en page automatique collaboratif. Une fois que tu as traduit le contenu des ressources dans Tolgee, tu peux venir voir le rendu mis en page ici.
+    help: Retrouve toutes les explications pour utiliser Polyglot sur l'onglet "Aide".
+    languages: Langues
+    resources: Ressources
+    title: Générer une ressource
