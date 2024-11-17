@@ -11,7 +11,10 @@
     <%= Sentry.get_trace_propagation_meta.html_safe %>
   </head>
 
-  <body class="px-4 flex flex-col">
-    <%= yield %>
+  <body class="flex flex-col">
+    <%= render("layouts/header") %>
+    <div class="mx-auto px-4 w-full max-w-6xl my-3">
+      <%= yield %>
+    </div>
   </body>
 </html>
