@@ -1,0 +1,2270 @@
+[
+  {
+    "type": "TEXT",
+    "id": "V2C4L1",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 38,
+      "isBold": true
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C4L1",
+    "pageNumber": "2",
+    "x": 17,
+    "y": 28,
+    "width": 563,
+    "height": 64,
+    "rotation": 0
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C0L15",
+    "pageNumber": "1",
+    "x": 325,
+    "y": 340,
+    "width": 78,
+    "height": 26,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C0L15",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "TOP"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 13,
+      "isBold": true
+    },
+    "color": [
+      "#e71e25"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C0L14",
+    "pageNumber": "1",
+    "x": 235,
+    "y": 340,
+    "width": 78,
+    "height": 26,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C0L14",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "TOP"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 13,
+      "isBold": true
+    },
+    "color": [
+      "#e71e25"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C0L13",
+    "pageNumber": "1",
+    "x": 145,
+    "y": 340,
+    "width": 78,
+    "height": 26,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C0L13",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "TOP"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 11,
+      "isBold": true
+    },
+    "color": [
+      "#e71e25"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C0L12",
+    "pageNumber": "1",
+    "x": 55,
+    "y": 340,
+    "width": 78,
+    "height": 26,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C0L12",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "TOP"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 13,
+      "isBold": true
+    },
+    "color": [
+      "#e71e25"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C0L11",
+    "pageNumber": "1",
+    "x": 425.761474609375,
+    "y": 255.7607421875,
+    "width": 123.46975708007812,
+    "height": 59.16618347167969,
+    "rotation": -15.758801235623974
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C0L11",
+    "rotation": -14.906711147065907,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "TOP"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 13,
+      "isBold": false
+    },
+    "color": [
+      "#000000"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C0L7",
+    "pageNumber": "1",
+    "x": 45,
+    "y": 87,
+    "width": 507,
+    "height": 162,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C0L7",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "LEFT",
+      "vertical": "TOP"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 12,
+      "isBold": false
+    },
+    "color": [
+      "#000000"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C0L6",
+    "pageNumber": "1",
+    "x": 45,
+    "y": 43,
+    "width": 385,
+    "height": 43,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C0L6",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "LEFT",
+      "vertical": "TOP"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 30,
+      "isBold": true
+    },
+    "color": [
+      "#e71e25"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C0L1",
+    "pageNumber": "0",
+    "x": 82,
+    "y": 63,
+    "width": 438,
+    "height": 37,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C0L1",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "LEFT",
+      "vertical": "TOP"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 27,
+      "isBold": false
+    },
+    "color": [
+      "#000000"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C0L0",
+    "pageNumber": "0",
+    "x": 83,
+    "y": 103,
+    "width": 437,
+    "height": 36,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C0L0",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "LEFT",
+      "vertical": "TOP"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 27,
+      "isBold": false
+    },
+    "color": [
+      "#000000"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C0L16",
+    "pageNumber": "0",
+    "x": 164,
+    "y": 278,
+    "width": 360,
+    "height": 29,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C0L16",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "LEFT",
+      "vertical": "TOP"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 21,
+      "isBold": false
+    },
+    "color": [
+      "#000000"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C7L2",
+    "pageNumber": "5",
+    "x": 40,
+    "y": 122,
+    "width": 517,
+    "height": 197,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C7L2",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 39,
+      "isBold": false
+    },
+    "color": [
+      "#000000"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C0L4",
+    "pageNumber": "5",
+    "x": 255,
+    "y": 346,
+    "width": 86,
+    "height": 33,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C0L4",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 20,
+      "isBold": false
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C13L2",
+    "pageNumber": "7",
+    "x": 40,
+    "y": 122,
+    "width": 517,
+    "height": 197,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C13L2",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 39,
+      "isBold": false
+    },
+    "color": [
+      "#000000"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C13L2",
+    "pageNumber": "7",
+    "x": 255,
+    "y": 346,
+    "width": 86,
+    "height": 33,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C13L2",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 20,
+      "isBold": false
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C0L4",
+    "pageNumber": "11",
+    "x": 255,
+    "y": 346,
+    "width": 86,
+    "height": 33,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C0L4",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 20,
+      "isBold": false
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C21L2",
+    "pageNumber": "11",
+    "x": 40,
+    "y": 122,
+    "width": 517,
+    "height": 197,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C21L2",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 39,
+      "isBold": false
+    },
+    "color": [
+      "#000000"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C13L4",
+    "pageNumber": "6",
+    "x": 135,
+    "y": 130,
+    "width": 131,
+    "height": 24,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C13L4",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 13,
+      "isBold": true
+    },
+    "color": [
+      "#ff6600"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C13L3",
+    "pageNumber": "6",
+    "x": 10,
+    "y": 221,
+    "width": 108,
+    "height": 24,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C13L3",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 13,
+      "isBold": true
+    },
+    "color": [
+      "#ff6600"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C13L5",
+    "pageNumber": "6",
+    "x": 389,
+    "y": 103,
+    "width": 110,
+    "height": 48,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C13L5",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 13,
+      "isBold": true
+    },
+    "color": [
+      "#c20003"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C13L6",
+    "pageNumber": "6",
+    "x": 430,
+    "y": 212,
+    "width": 95,
+    "height": 48,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C13L6",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 13,
+      "isBold": true
+    },
+    "color": [
+      "#c20003"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C13L7",
+    "pageNumber": "6",
+    "x": 477,
+    "y": 151,
+    "width": 53,
+    "height": 26,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C13L7",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "RIGHT",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 16,
+      "isBold": true
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C13L8",
+    "pageNumber": "6",
+    "x": 477,
+    "y": 297,
+    "width": 53,
+    "height": 26,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C13L8",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "RIGHT",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 16,
+      "isBold": true
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C13L1",
+    "pageNumber": "6",
+    "x": 17,
+    "y": 28,
+    "width": 563,
+    "height": 64,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C13L1",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 44,
+      "isBold": true
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C0L10",
+    "pageNumber": "10",
+    "x": 287,
+    "y": 331,
+    "width": 41,
+    "height": 44,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C0L10",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 29,
+      "isBold": true
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C21L1",
+    "pageNumber": "10",
+    "x": 17,
+    "y": 28,
+    "width": 563,
+    "height": 64,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C21L1",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 50,
+      "isBold": true
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C4L2",
+    "pageNumber": "3",
+    "x": 40,
+    "y": 122,
+    "width": 517,
+    "height": 197,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C4L2",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 39,
+      "isBold": false
+    },
+    "color": [
+      "#000000"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C0L4",
+    "pageNumber": "3",
+    "x": 255,
+    "y": 346,
+    "width": 86,
+    "height": 33,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C0L4",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 20,
+      "isBold": false
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C7L1",
+    "pageNumber": "4",
+    "x": 17,
+    "y": 28,
+    "width": 563,
+    "height": 64,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C7L1",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 50,
+      "isBold": true
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C18L2",
+    "pageNumber": "9",
+    "x": 40,
+    "y": 122,
+    "width": 517,
+    "height": 197,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C18L2",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 39,
+      "isBold": false
+    },
+    "color": [
+      "#000000"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C0L4",
+    "pageNumber": "9",
+    "x": 255,
+    "y": 346,
+    "width": 86,
+    "height": 33,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C0L4",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 20,
+      "isBold": false
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C18L1",
+    "pageNumber": "8",
+    "x": 17,
+    "y": 28,
+    "width": 563,
+    "height": 64,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C18L1",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 54,
+      "isBold": true
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C0L3",
+    "pageNumber": "13",
+    "x": 360,
+    "y": 346,
+    "width": 86,
+    "height": 33,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C0L3",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 20,
+      "isBold": false
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C3L2",
+    "pageNumber": "13",
+    "x": 40,
+    "y": 122,
+    "width": 517,
+    "height": 197,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C3L2",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 39,
+      "isBold": false
+    },
+    "color": [
+      "#000000"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C3L1",
+    "pageNumber": "12",
+    "x": 17,
+    "y": 28,
+    "width": 563,
+    "height": 64,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C3L1",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 37,
+      "isBold": true
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C0L3",
+    "pageNumber": "15",
+    "x": 360,
+    "y": 346,
+    "width": 86,
+    "height": 33,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C0L3",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 20,
+      "isBold": false
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C16L2",
+    "pageNumber": "15",
+    "x": 40,
+    "y": 122,
+    "width": 517,
+    "height": 197,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C16L2",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 39,
+      "isBold": false
+    },
+    "color": [
+      "#000000"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C16L1",
+    "pageNumber": "14",
+    "x": 17,
+    "y": 28,
+    "width": 563,
+    "height": 64,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C16L1",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 50,
+      "isBold": true
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C0L3",
+    "pageNumber": "17",
+    "x": 360,
+    "y": 346,
+    "width": 86,
+    "height": 33,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C0L3",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 20,
+      "isBold": false
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C17L2",
+    "pageNumber": "17",
+    "x": 40,
+    "y": 122,
+    "width": 517,
+    "height": 197,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C17L2",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 39,
+      "isBold": false
+    },
+    "color": [
+      "#000000"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C17L1",
+    "pageNumber": "16",
+    "x": 17,
+    "y": 28,
+    "width": 563,
+    "height": 64,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C17L1",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 43,
+      "isBold": true
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C0L3",
+    "pageNumber": "19",
+    "x": 360,
+    "y": 346,
+    "width": 86,
+    "height": 33,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C0L3",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 20,
+      "isBold": false
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C20L2",
+    "pageNumber": "19",
+    "x": 40,
+    "y": 122,
+    "width": 517,
+    "height": 197,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C20L2",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 39,
+      "isBold": false
+    },
+    "color": [
+      "#000000"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C20L6",
+    "pageNumber": "18",
+    "x": 233,
+    "y": 296,
+    "width": 149,
+    "height": 40,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C20L6",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "LEFT",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 19,
+      "isBold": true
+    },
+    "color": [
+      "#000000"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C20L5",
+    "pageNumber": "18",
+    "x": 431,
+    "y": 197,
+    "width": 146,
+    "height": 40,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C20L5",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "LEFT",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 19,
+      "isBold": true
+    },
+    "color": [
+      "#000000"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C20L4",
+    "pageNumber": "18",
+    "x": 240,
+    "y": 132,
+    "width": 139,
+    "height": 40,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C20L4",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "LEFT",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 19,
+      "isBold": true
+    },
+    "color": [
+      "#000000"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C20L3",
+    "pageNumber": "18",
+    "x": 38,
+    "y": 204,
+    "width": 152,
+    "height": 40,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C20L3",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "LEFT",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 19,
+      "isBold": true
+    },
+    "color": [
+      "#000000"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C20L1",
+    "pageNumber": "18",
+    "x": 17,
+    "y": 28,
+    "width": 563,
+    "height": 64,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C20L1",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 37,
+      "isBold": true
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C0L3",
+    "pageNumber": "21",
+    "x": 360,
+    "y": 346,
+    "width": 86,
+    "height": 33,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C0L3",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 20,
+      "isBold": false
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C26L2",
+    "pageNumber": "21",
+    "x": 40,
+    "y": 122,
+    "width": 517,
+    "height": 197,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C26L2",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 39,
+      "isBold": false
+    },
+    "color": [
+      "#000000"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C26L1",
+    "pageNumber": "20",
+    "x": 17,
+    "y": 28,
+    "width": 563,
+    "height": 64,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C26L1",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 49,
+      "isBold": true
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C0L3",
+    "pageNumber": "23",
+    "x": 360,
+    "y": 346,
+    "width": 86,
+    "height": 33,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C0L3",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 20,
+      "isBold": false
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C36L2",
+    "pageNumber": "23",
+    "x": 40,
+    "y": 122,
+    "width": 517,
+    "height": 197,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C36L2",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 39,
+      "isBold": false
+    },
+    "color": [
+      "#000000"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C36L1",
+    "pageNumber": "22",
+    "x": 17,
+    "y": 28,
+    "width": 563,
+    "height": 64,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C36L1",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 49,
+      "isBold": true
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C0L2",
+    "pageNumber": "25",
+    "x": 466,
+    "y": 346,
+    "width": 86,
+    "height": 33,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C0L2",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 20,
+      "isBold": false
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C2L2",
+    "pageNumber": "25",
+    "x": 40,
+    "y": 122,
+    "width": 517,
+    "height": 197,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C2L2",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 39,
+      "isBold": false
+    },
+    "color": [
+      "#000000"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C2L1",
+    "pageNumber": "24",
+    "x": 17,
+    "y": 28,
+    "width": 563,
+    "height": 64,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C2L1",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 47,
+      "isBold": true
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C0L2",
+    "pageNumber": "27",
+    "x": 466,
+    "y": 346,
+    "width": 86,
+    "height": 33,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C0L2",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 20,
+      "isBold": false
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C8L2",
+    "pageNumber": "27",
+    "x": 40,
+    "y": 122,
+    "width": 517,
+    "height": 197,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C8L2",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 39,
+      "isBold": false
+    },
+    "color": [
+      "#000000"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C8L1",
+    "pageNumber": "26",
+    "x": 17,
+    "y": 28,
+    "width": 563,
+    "height": 64,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C8L1",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 47,
+      "isBold": true
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C0L2",
+    "pageNumber": "29",
+    "x": 466,
+    "y": 346,
+    "width": 86,
+    "height": 33,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C0L2",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 20,
+      "isBold": false
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C22L2",
+    "pageNumber": "29",
+    "x": 40,
+    "y": 122,
+    "width": 517,
+    "height": 197,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C22L2",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 39,
+      "isBold": false
+    },
+    "color": [
+      "#000000"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C22L1",
+    "pageNumber": "28",
+    "x": 17,
+    "y": 28,
+    "width": 563,
+    "height": 64,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C22L1",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 43,
+      "isBold": true
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C0L2",
+    "pageNumber": "31",
+    "x": 466,
+    "y": 346,
+    "width": 86,
+    "height": 33,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C0L2",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 20,
+      "isBold": false
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C25L2",
+    "pageNumber": "31",
+    "x": 40,
+    "y": 122,
+    "width": 517,
+    "height": 197,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C25L2",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 39,
+      "isBold": false
+    },
+    "color": [
+      "#000000"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C25L1",
+    "pageNumber": "30",
+    "x": 17,
+    "y": 28,
+    "width": 563,
+    "height": 64,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C25L1",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 59,
+      "isBold": true
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C0L2",
+    "pageNumber": "33",
+    "x": 466,
+    "y": 346,
+    "width": 86,
+    "height": 33,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C0L2",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 20,
+      "isBold": false
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C30L2",
+    "pageNumber": "33",
+    "x": 40,
+    "y": 122,
+    "width": 517,
+    "height": 197,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C30L2",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 39,
+      "isBold": false
+    },
+    "color": [
+      "#000000"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C30L1",
+    "pageNumber": "32",
+    "x": 17,
+    "y": 28,
+    "width": 563,
+    "height": 64,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C30L1",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 59,
+      "isBold": true
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C32L2",
+    "pageNumber": "35",
+    "x": 40,
+    "y": 122,
+    "width": 517,
+    "height": 197,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C32L2",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 39,
+      "isBold": false
+    },
+    "color": [
+      "#000000"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C0L2",
+    "pageNumber": "35",
+    "x": 466,
+    "y": 346,
+    "width": 86,
+    "height": 33,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C0L2",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 20,
+      "isBold": false
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C32L1",
+    "pageNumber": "34",
+    "x": 17,
+    "y": 28,
+    "width": 563,
+    "height": 64,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C32L1",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 45,
+      "isBold": true
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C33L1",
+    "pageNumber": "36",
+    "x": 17,
+    "y": 28,
+    "width": 563,
+    "height": 64,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C33L1",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 59,
+      "isBold": true
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C0L2",
+    "pageNumber": "37",
+    "x": 466,
+    "y": 346,
+    "width": 86,
+    "height": 33,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C0L2",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 20,
+      "isBold": false
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C33L2",
+    "pageNumber": "37",
+    "x": 40,
+    "y": 122,
+    "width": 517,
+    "height": 197,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C33L2",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 39,
+      "isBold": false
+    },
+    "color": [
+      "#000000"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C34L1",
+    "pageNumber": "38",
+    "x": 17,
+    "y": 28,
+    "width": 563,
+    "height": 64,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C34L1",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 59,
+      "isBold": true
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C0L2",
+    "pageNumber": "39",
+    "x": 466,
+    "y": 346,
+    "width": 86,
+    "height": 33,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C0L2",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 20,
+      "isBold": false
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C34L2",
+    "pageNumber": "39",
+    "x": 40,
+    "y": 122,
+    "width": 517,
+    "height": 197,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C34L2",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 39,
+      "isBold": false
+    },
+    "color": [
+      "#000000"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C0L2",
+    "pageNumber": "41",
+    "x": 466,
+    "y": 346,
+    "width": 86,
+    "height": 33,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C0L2",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 20,
+      "isBold": false
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C37L2",
+    "pageNumber": "41",
+    "x": 40,
+    "y": 122,
+    "width": 517,
+    "height": 197,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C37L2",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 39,
+      "isBold": false
+    },
+    "color": [
+      "#000000"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C37L1",
+    "pageNumber": "40",
+    "x": 17,
+    "y": 28,
+    "width": 563,
+    "height": 64,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C37L1",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 59,
+      "isBold": true
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C39L1",
+    "pageNumber": "42",
+    "x": 17,
+    "y": 28,
+    "width": 563,
+    "height": 64,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C39L1",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 54,
+      "isBold": true
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C0L2",
+    "pageNumber": "43",
+    "x": 466,
+    "y": 346,
+    "width": 86,
+    "height": 33,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C0L2",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 20,
+      "isBold": false
+    },
+    "color": [
+      "#ffffff"
+    ]
+  },
+  {
+    "type": "RECTANGLE",
+    "id": "V2C39L2",
+    "pageNumber": "43",
+    "x": 40,
+    "y": 122,
+    "width": 517,
+    "height": 197,
+    "rotation": 0
+  },
+  {
+    "type": "TEXT",
+    "id": "V2C39L2",
+    "rotation": 0,
+    "textAlignment": {
+      "horizontal": "CENTER",
+      "vertical": "CENTER"
+    },
+    "textProperties": {
+      "fontName": "Urbanist",
+      "fontSize": 39,
+      "isBold": false
+    },
+    "color": [
+      "#000000"
+    ]
+  }
+]

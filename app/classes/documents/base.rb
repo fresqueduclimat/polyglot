@@ -11,7 +11,7 @@ module Documents::Base
     config_name: "FacilitationGuide",
     document_id: 22,
     name: "Facilitation Guide",
-    page_size: [396, 595],
+    page_size: [595, 842],
     api_key: ENV["TOLGEE_FACILITATION_GUIDE"]
   }.freeze
 
@@ -22,4 +22,12 @@ module Documents::Base
     page_size: [960, 540],
     api_key: ENV["TOLGEE_FACILITATION_KIT"]
   }.freeze
+
+  # KIDS_CARDS = {
+  #   config_name: "KidsCards",
+  #   document_id: 8,
+  #   name: "Kids Cards",
+  #   page_size: [597, 408],
+  #   api_key: ENV["TOLGEE_FDC_KIDS_CARDS"]
+  # }.freeze
 end
