@@ -1,5 +1,5 @@
 <div class="relative border border-gray-500 rounded-xl overflow-hidden mb-60"
      style="width: 100%; height: 600px; resize: vertical; min-height: 400px;">
-  <embed src="<%= url_for(pdf_file_path) %>" class="absolute inset-0 w-full h-full" type="application/pdf">
+  <embed src="<%= url_for(pdf_file_path) %>#zoom=page-fit" class="absolute inset-0 w-full h-full" type="application/pdf">
   <div class="resize-handle absolute bottom-0 right-1/2 transform translate-x-1/2 bg-gray-500 cursor-s-resize w-4 h-4"></div>
 </div>
