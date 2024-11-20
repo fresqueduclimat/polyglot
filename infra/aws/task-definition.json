@@ -76,6 +76,10 @@
 					"valueFrom": "arn:aws:ssm:${AWS_REGION}:${AWS_ACCOUNT_ID}:parameter/${ENVIRONMENT}/${PRODUCT}/tolgee_facilitation_guide"
 				},
 				{
+					"name": "TOLGEE_FDC_KIDS_CARDS",
+					"valueFrom": "arn:aws:ssm:${AWS_REGION}:${AWS_ACCOUNT_ID}:parameter/${ENVIRONMENT}/${PRODUCT}/tolgee_fdc_kids_cards"
+				},
+				{
 					"name": "SECRET_KEY_BASE",
 					"valueFrom": "arn:aws:ssm:${AWS_REGION}:${AWS_ACCOUNT_ID}:parameter/${ENVIRONMENT}/${PRODUCT}/secret_key_base"
 				}
