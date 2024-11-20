@@ -23,11 +23,11 @@ module Documents::Base
     api_key: ENV["TOLGEE_FACILITATION_KIT"]
   }.freeze
 
-  # KIDS_CARDS = {
-  #   config_name: "KidsCards",
-  #   document_id: 8,
-  #   name: "Kids Cards",
-  #   page_size: [597, 408],
-  #   api_key: ENV["TOLGEE_FDC_KIDS_CARDS"]
-  # }.freeze
+  KIDS_CARDS = {
+    config_name: "KidsCards",
+    document_id: 8,
+    name: "Kids Cards",
+    page_size: [597, 408],
+    api_key: ENV["TOLGEE_FDC_KIDS_CARDS"]
+  }.freeze
 end
