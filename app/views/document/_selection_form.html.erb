@@ -1,6 +1,12 @@
 <%= form_with(url: document_path, method: :get, class: "mb-4") do %>
   <div class="flex justify-between items-center gap-4">
-    <%= select_tag(:document_id, options_for_select(documents.map{[_1.first, _1.last]} , params[:document_id]), class: "border p-2 rounded-xl w-full", onchange: "this.form.submit()") %>
-    <%= select_tag(:language, options_for_select(languages , params[:language]), class: "border p-2 rounded-xl w-full", onchange: "this.form.submit()") %>
+    <div class="w-full">
+      <div class="text-xl font-bold text-gray-900 mb-3"><%= t("homepage.resources") %></div>
+      <%= select_tag(:document_id, options_for_select(documents.map{[_1.first, _1.last]} , params[:document_id]), class: "border p-2 rounded-xl w-full", onchange: "this.form.submit()") %>
+    </div>
+    <div class="w-full">
+      <div class="text-xl font-bold text-gray-900 mb-3"><%= t("homepage.languages") %></div>
+      <%= select_tag(:language, options_for_select(languages , params[:language]), class: "border p-2 rounded-xl w-full", onchange: "this.form.submit()") %>
+    </div>
   </div>
 <% end %>

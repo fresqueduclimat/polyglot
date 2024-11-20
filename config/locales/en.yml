@@ -213,3 +213,9 @@ en:
       long: "%B %d, %Y %H:%M"
       short: "%I:%M%P"
     pm: pm
+  homepage:
+    description: Polyglot is our collaborative automatic layout tool. Once you have translated the content of the resources in Tolgee, you can view the layout here.
+    help: Find all the explanations you need to use Polyglot on the 'Help' tab.
+    languages: Languages
+    resources: Resources
+    title: Generate a resource
