@@ -5,6 +5,6 @@ class Tolgee::LanguagesFetcherService < Tolgee::BaseFetcherService
   end
 
   def call
-    fetch(endpoint: "#{@document_id}/languages", params: {format: "JSON", zip: "false"})
+    fetch(endpoint: "#{@document_id}/languages", params: {size: 100, format: "JSON", zip: "false"})
   end
 end
