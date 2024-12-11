@@ -79,6 +79,33 @@ We welcome contributions to improve Polyglot! If you'd like to contribute, pleas
 
 If you encounter any issues or have suggestions for improvement, please open an issue in the repository. We appreciate your feedback and will respond promptly.
 
+## Adding a New Document
+
+To add a new document to the project, follow these steps:
+
+1. **Get the New Document ID**:
+    - In Tolgee, find the new document ID. (24 in this example: `https://translate.climatefresk.org/projects/24`).
+
+2. **Create a REST API Key**:
+    - In Tolgee, create a REST API key specifically for the new document.
+
+3. **Update the Environment Variables**:
+    - In your local environment `.env` file, add the new document API key.
+    - For staging and production environments, add the new document API key as environment variables. This is managed using **Terraform** (DevOps).
+
+4. **Add Document Templates**:
+    - Add the empty PDF document template and the corresponding configuration JSON file to the `resources/templates` folder in the project.
+
+5. **Update Document Settings**:
+    - Modify the `Documents::Base` module in the `app/classes/documents/base.rb` file to include the new document settings.
+
+6. **Generate the Configuration File**:
+    - Run the following rake task to generate the new document configuration file:
+      ```bash
+      rake generate:ruby_config
+      ```
+    - This will create the configuration file in the `app/classes/documents` folder.
+
 ## License
 
 TBD
