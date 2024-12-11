@@ -16,19 +16,22 @@ Polyglot is a Ruby on Rails application designed to streamline the translation p
    - [Staging Branch](#staging-branch)
    - [Main Branch](#main-branch)
 7. [Contributing](#contributing)
-8. [Feedback and Support](#feedback-and-support)
-9. [Adding a New Document](#adding-a-new-document)
+7. [Contributing](#contributing)
+8. [DocumentController#show](#documentcontrollershow)
+   - [Workflow Breakdown](#workflow-breakdown)
+9. [Feedback and Support](#feedback-and-support)
+10. [Adding a New Document](#adding-a-new-document)
    - [Get the New Document ID](#get-the-new-document-id)
    - [Create a REST API Key](#create-a-rest-api-key)
    - [Update the Environment Variables](#update-the-environment-variables)
    - [Add Document Templates](#add-document-templates)
    - [Update Document Settings](#update-document-settings)
    - [Generate the Configuration File](#generate-the-configuration-file)
-10. [Documenting the `generate:ruby_config` Rake Task](#documenting-the-generaterubyconfig-rake-task)
+11. [Documenting the `generate:ruby_config` Rake Task](#documenting-the-generaterubyconfig-rake-task)
     - [Task Definition](#task-definition)
     - [How to Use](#how-to-use)
-11. [Adding a New Language](#adding-a-new-language)
-12. [License](#license)
+12. [Adding a New Language](#adding-a-new-language)
+13. [License](#license)
 
 
 ## Purpose
@@ -96,6 +99,34 @@ The application is hosted on AWS EC2 instances. CI/CD is automated based on bran
   - Pushing to the `main` branch deploys the app to the production environment.
   - The app is accessible at: [https://resources.climatefresk.org/](https://resources.climatefresk.org/).
 
+## `DocumentController#show`
+
+The `show` action in the `DocumentController` is the core functionality for fetching, translating, and generating PDF documents in multiple languages. Here's an overview of its workflow:
+
+### Workflow Breakdown
+
+1. **Fetch Available Documents**:
+   - Utilizes the `Documents::FetcherService` to retrieve a list of documents.
+   - Selects a specific document based on the `document_id` parameter or defaults to the first document.
+
+2. **Fetch Supported Languages**:
+   - Calls `Tolgee::LanguagesFetcherService` with the document ID and API key to retrieve the list of languages supported for the selected document.
+   - Extracts language tags for use in language selection.
+
+3. **Select Language**:
+   - Leverages the `Languages::SelecterService` to determine the language based on the provided `language` parameter or a default value.
+
+4. **Map Documents**:
+   - Processes the list of documents using `Documents::MappingService` for structured access.
+
+5. **Fetch Translated Content**:
+   - Calls `Tolgee::ContentFetcherService` to retrieve the content of the document in the selected language.
+
+6. **Generate PDF File**:
+   - Defines the file path for the PDF.
+   - Configures the document template using the associated configuration module.
+   - Passes the fetched data and configuration to `Pdf::GeneratorService` to create a PDF document with the correct language and formatting.
+
 ## Contributing
 
 We welcome contributions to improve Polyglot! If you'd like to contribute, please:
@@ -103,10 +134,6 @@ We welcome contributions to improve Polyglot! If you'd like to contribute, pleas
 1. Fork the repository.
 2. Create a new branch for your feature or bugfix.
 3. Submit a pull request with a clear description of your changes.
-
-## Feedback and Support
-
-If you encounter any issues or have suggestions for improvement, please open an issue in the repository. We appreciate your feedback and will respond promptly.
 
 ## Adding a New Document
 
@@ -161,6 +188,11 @@ To add a new language to the project, follow these steps:
       ```ruby
         "co-FR" => {leading: 0.4}
       ```
+
+## Feedback and Support
+
+If you encounter any issues or have suggestions for improvement, please open an issue in the repository. We appreciate your feedback and will respond promptly.
+
 
 ## License
 
