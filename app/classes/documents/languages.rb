@@ -44,6 +44,7 @@ module Documents::Languages
     "nb-NO" => {leading: 0.4},
     "ne-NP" => {font: "NotoSans", leading: 0.4},
     "nl-NL" => {leading: 0.4},
+    "oc-ES" => {leading: 0.4},
     "pl-PL" => {leading: 0.4},
     "pt-BR" => {leading: 0.4},
     "pt-PT" => {leading: 0.4},
