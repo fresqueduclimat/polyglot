@@ -1,6 +1,35 @@
 # Polyglot
-
 Polyglot is a Ruby on Rails application designed to streamline the translation process for the Climate Fresk community. It bridges the gap between translators and end-users by ensuring that translated documents are accessible, up-to-date, and easy to manage.
+
+# Table of Contents
+
+1. [Polyglot](#polyglot)
+2. [Purpose](#purpose)
+3. [Features](#features)
+4. [Workflow](#workflow)
+   - [Translation in Tolgee](#translation-in-tolgee)
+   - [Importing to Polyglot](#importing-to-polyglot)
+   - [Accessing Translations](#accessing-translations)
+   - [Updating Translations](#updating-translations)
+5. [Installation](#installation)
+6. [Deployment](#deployment)
+   - [Staging Branch](#staging-branch)
+   - [Main Branch](#main-branch)
+7. [Contributing](#contributing)
+8. [Feedback and Support](#feedback-and-support)
+9. [Adding a New Document](#adding-a-new-document)
+   - [Get the New Document ID](#get-the-new-document-id)
+   - [Create a REST API Key](#create-a-rest-api-key)
+   - [Update the Environment Variables](#update-the-environment-variables)
+   - [Add Document Templates](#add-document-templates)
+   - [Update Document Settings](#update-document-settings)
+   - [Generate the Configuration File](#generate-the-configuration-file)
+10. [Documenting the `generate:ruby_config` Rake Task](#documenting-the-generaterubyconfig-rake-task)
+    - [Task Definition](#task-definition)
+    - [How to Use](#how-to-use)
+11. [Adding a New Language](#adding-a-new-language)
+12. [License](#license)
+
 
 ## Purpose
 
@@ -105,6 +134,22 @@ To add a new document to the project, follow these steps:
       rake generate:ruby_config
       ```
     - This will create the configuration file in the `app/classes/documents` folder.
+
+## Documenting the `generate:ruby_config` Rake Task
+
+### Task Definition
+
+The `generate:ruby_config` rake task is used to generate configuration files for new documents. This task relies on specific constants and a service class to create the required configuration. Below is a detailed explanation:
+
+### How to Use
+
+1. Define the appropriate constants (`PAGE_WIDTH`, `PAGE_HEIGHT`, and `PROJECT_NAME`) for the document you are configuring.
+2. Run the rake task:
+   ```bash
+   rake generate:ruby_config
+   ```
+3. The task will generate the configuration file in the `app/classes/documents` folder using the `ImportService` class.
+
 
 ## Adding a New Language
 
