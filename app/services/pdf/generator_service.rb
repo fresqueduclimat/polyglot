@@ -22,7 +22,7 @@ class Pdf::GeneratorService
           insert_text(config, key)
           # draw_bounding_box(config) # For debugging
         end
-        insert_images(page_number: page_number + 1)
+        # insert_images(page_number: page_number + 1)
       end
     end
   end
@@ -49,6 +49,7 @@ class Pdf::GeneratorService
   end
 
   def insert_images(page_number:)
+    # TODO: insert images only if there is a config file (e.g. module Documents::FdcAdultCardsImages) for the generated document
     ::Documents::FdcAdultCardsImages::CONFIG[page_number]&.each_value do |config|
       image_config = config[@language]
       next unless image_config
