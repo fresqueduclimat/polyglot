@@ -106,6 +106,17 @@ To add a new document to the project, follow these steps:
       ```
     - This will create the configuration file in the `app/classes/documents` folder.
 
+## Adding a New Language
+
+To add a new language to the project, follow these steps:
+
+1. **Update Supported Languages**:
+    - Go to the `app/classes/documents/languages.rb` file.
+    - Add the new language to the list of supported languages. For example:
+      ```ruby
+        "co-FR" => {leading: 0.4}
+      ```
+
 ## License
 
 TBD
