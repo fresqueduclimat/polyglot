@@ -23,6 +23,7 @@ class Pdf::FontSelecterService
       "NotoSansArabic" => "app/assets/fonts/NotoSansArabic/NotoSansArabic",
       "NotoSans" => "app/assets/fonts/NotoSans/NotoSans",
       "Vazirmatn" => "app/assets/fonts/Vazirmatn/Vazirmatn",
+      "NotoSansKR" => "app/assets/fonts/NotoSansKR/NotoSansKR",
       "default" => "app/assets/fonts/Urbanist/Urbanist"
     }
 
